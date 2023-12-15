@@ -1,337 +1,5 @@
-$font-size: 16px;
-$light:    var(--tblr-body-bg);
-$white:    #ffffff;
-$dark:     #212529;
-$blue:     #0044de;
-$gray:     #6c757d;
-$black:    #000000;
-$orange:   #f4a261;
-
-//
-//$font-size: 16px;
-//$light:    #212529;
-//$white:    #ffffff;
-//$dark:     #212529;
-//$blue:     #0044de;
-//$gray:     #6c757d;
-//$black:    #000000;
-//$orange:   #f4a261;
-
-$body-bg:               $white !default;
-$primary:               $orange !default;
-$secondary:             $gray !default;
-$textDark:              $dark !default;
-$textLight:             $light !default;
-$section:               $white !default;
-$headerBg:              $white !default;
-$topHeaderBg:           $black !default;
-$topHeaderElements:     $white !default;
-$menuColor:             $black !default;
-$menuHoverColor:        $black !default;
-$links:                 $black !default;
-$paragraphColor:        $black !default;
-$lineHeight:            1.5 !default;
-$letterSpacing:         0 !default;
-$fontWeight:            400 !default;
-$textTransform:         none !default;
-$headingColor:          $black !default;
-$paragraphSize:         1rem !default;
-$headingOne:            64px !default;
-$headingTwo:            52px !default;
-$headingThree:          44px !default;
-$headingFour:           32px !default;
-$headingFive:           24px !default;
-$headingSix:            20px !default;
-
-$testimonialBackgroundVariable: $white !default;
-$testimonialBorderVariable: $black !default;
-
-$btnBorderRadius: 33px !default;
-$btnBorderColor: $orange !default;
-$btnBorderSize: 2px !default;
-$btnBorderStyle: solid !default;
-$btnPaddingBlock: 15px !default;
-$btnPaddingInline: 24px !default;
-$btnBackground: var(--tblr-btn-bg) !default;
-$btnBackgroundHover: #e76f51 !default;
-$btnText:            $white !default;
-$btnTextHoverColor: $white !default;
-
-$btnSecondaryBackground: #FF5E00 !default;
-$btnSecondaryBackgroundHover: $black !default;
-$btnSecondaryText:            $white !default;
-$btnSecondaryTextHoverColor: $white !default;
-
-$btnOutlineBackground: transparent !default;
-$btnOutlineBackgroundHover: $orange !default;
-$btnOutlineText: $orange !default;
-$btnOutlineTextHoverColor: $white !default;
-
-
-$formControlBorderRadius: 2px !default;
-$formControlBorderSize: 2px !default;
-$formControlBorderStyle: solid !default;
-$formControlBorderColor: #ced4da !default;
-$formControlPaddingBlock: 15px !default;
-$formControlPaddingInline: 15px !default;
-$formControlPlaceholderColor: $gray !default;
-$formControlBackground: $white !default;
-$formControlBackgroundHover: $white !default;
-$formControlTextColor: $black !default;
-$formControlTextHoverColor: $black !default;
-$formLabel: $black !default;
-$formLabelFontSize: 16px !default;
-
-
-$footerBg:              $white !default;
-$footerTextColor:       $black !default;
-$footerLinkColor:       $black !default;
-$footerHoverLinkColor:  $black !default;
-
-$headerBtnColor:        $white !default;
-
-$font-family-sans-serif:      'Jost', sans-serif !default;
-$font-family-base:            $font-family-sans-serif !default;
-
-$font-family-base: $font-family-sans-serif;
-$bodyFontSize:     $font-size   !default;
-$menuFontSize:     $font-size !default;
-$body-text-align:  null !default;
-$fontFamily:       $font-family-base !default;
-$menuFontFamily:   $font-family-base !default;
-
-
-$hamburgerBorderRadius: 0 !default;
-$hamburgerBorderSize: 1px !default;
-$hamburgerBorderStyle: solid !default;
-$hamburgerBorderColor: $black !default;
-$hamburgerBackground: transparent !default;
-$hamburgerIconSize: 16px !default;
-$hamburgerIconColor: $black !default;
-
-$navFontColor: $black !default;
-$navFontSize: 16px !default;
-$navFontFamily: $font-family-sans-serif !default;
-$navLinkFontColor: $black !default;
-$navLinkFontSize: 16px !default;
-$navLinkFontFamily: $font-family-sans-serif !default;
-$navLinkHoverColor: $gray !default;
-$navLinkActiveColor: $gray !default;
-
-$textOnDarkBackground: $white !default;
-
-:root {
-    --primaryColor: #{$primary};
-    --links: #{$links};
-    --background: #{$body-bg};
-    --secondary: #{$secondary};
-    --textDark: #{$textDark};
-    --textLight: #{$textLight};
-    --section: #{$section};
-    --bodyFontSize: #{$bodyFontSize};
-    --fontFamily: #{$fontFamily};
-    --headerBg: #{$headerBg};
-    --topHeaderBg: #{$topHeaderBg};
-    --topHeaderElements: #{$topHeaderElements};
-    --menuColor: #{$menuColor};
-    --menuHoverColor: #{$menuHoverColor};
-    --btnText: #{$btnText};
-    --menuFontSize: #{$menuFontSize};
-    --menuFontFamily: #{$menuFontFamily};
-    --lineHeight: #{$lineHeight};
-    --letterSpacing: #{$letterSpacing};
-    --fontWeight: #{$fontWeight};
-    --textTransform: #{$textTransform};
-    --btnBackground: var(--tblr-btn-bg);
-
-
-
-    --paragraphColor: #000000;
-    --headingColor: #000000;
-    --paragraphSize: 1rem;
-    --headingOne: 64px;
-    --headingTwo: 52px;
-    --headingThree: 44px;
-    --headingFour: 32px;
-    --headingFive: 24px;
-    --headingSix: 20px;
-
-
-    --btnBorderRadius: #{$btnBorderRadius};
-    --btnBorderColor: #{$btnBorderColor};
-    --btnBorderSize: #{$btnBorderSize};
-    --btnBorderStyle: #{$btnBorderStyle};
-    --btnPaddingBlock: #{$btnPaddingBlock};
-    --btnPaddingInline: #{$btnPaddingInline};
-    --btnBackground: var(--tblr-btn-bg);
-    --btnBackgroundHover: #{$btnBackgroundHover};
-    --btnTextHoverColor: #{$btnTextHoverColor};
-
-    --btnSecondaryBackground: #{$btnSecondaryBackground};
-    --btnSecondaryBackgroundHover: #{$btnSecondaryBackgroundHover};
-    --btnSecondaryText: #{$btnSecondaryText};
-    --btnSecondaryTextHoverColor: #{$btnSecondaryTextHoverColor};
-
-    --btnOutlineBackground: #{$btnOutlineBackground};
-    --btnOutlineBackgroundHover: #{$btnOutlineBackgroundHover};
-    --btnOutlineText: #{$btnOutlineText};
-    --btnOutlineTextHoverColor: #{$btnOutlineTextHoverColor};
-
-    --formControlBorderRadius: #{$formControlBorderRadius};
-    --formControlBorderSize: #{$formControlBorderSize};
-    --formControlBorderStyle: #{$formControlBorderStyle};
-    --formControlBorderColor: #{$formControlBorderColor};
-    --formControlPaddingBlock: #{$formControlPaddingBlock};
-    --formControlPaddingInline: #{$formControlPaddingInline};
-    --formControlPlaceholderColor: #{$formControlPlaceholderColor};
-    --formControlBackground: #{$formControlBackground};
-    --formControlTextColor: #{$formControlTextColor};
-    --formControlTextHoverColor: #{$formControlTextHoverColor};
-    --formLabel: #{$formLabel};
-    --formLabelFontSize: #{$formLabelFontSize};
-
-    --footerBg: #{$footerBg};
-    --footerTextColor: #{$footerTextColor};
-    --footerLinkColor: #{$footerLinkColor};
-    --footerHoverLinkColor: #{$footerHoverLinkColor};
-    --headerBtnColor: #{$headerBtnColor};
-    --navFontColor: #{$navFontColor};
-    --navFontSize: #{$navFontSize};
-    --navFontFamily: #{$navFontFamily};
-    --navLinkFontColor: #{$navLinkFontColor};
-    --navLinkFontSize: #{$navLinkFontSize};
-    --navLinkFontFamily: #{$navLinkFontFamily};
-    --navLinkHoverColor: #{$navLinkHoverColor};
-    --navLinkActiveColor: #{$navLinkActiveColor};
-
-    --hamburgerBorderRadius: #{$hamburgerBorderRadius};
-    --hamburgerBorderSize: #{$hamburgerBorderSize};
-    --hamburgerBorderStyle: #{$hamburgerBorderStyle};
-    --hamburgerBorderColor: #{$hamburgerBorderColor};
-    --hamburgerBackground: #{$hamburgerBackground};
-    --hamburgerIconSize: #{$hamburgerIconSize};
-    --hamburgerIconColor: #{$hamburgerIconColor};
-
-    --testimonialBackgroundVariable: #{$testimonialBackgroundVariable};
-    --testimonialBorderVariable: #{$testimonialBorderVariable};
-
-    --textOnDarkBackground: #{$textOnDarkBackground};
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import "animation-backgrounds";
 @import "header-menus";
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1200px) {
-
-    /*liveetit css ( works only in live edit )*/
-
-    .mw-header-sticky-nav {
-        background-color: var(--headerBg) !important;
-
-    }
-
-    .mw-live-edit {
-
-        .mw-header-sticky-nav {
-            padding: 20px;
-            top: 50px;
-        }
-        .mw-nav-menu-transparent-with-image {
-            top: 55px;
-
-            .header-background {
-                transition: all 0.5s ease;
-                background: transparent;
-
-            }
-        }
-    }
-
-    //END liveedit
-
-    .navigation-holder.not-transparent {
-        transition: all 0.5s ease;
-    }
-
-    .mw-nav-menu-not-transparent {
-        opacity: 1;
-        //background-color: #FFFFFF !important;
-        background-color: var(--headerBg);
-    }
-
-    .mw-header-sticky-nav {
-        transition: all 0.5s ease;
-        position: sticky !important;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 20;
-    }
-
-    .mw-nav-menu-transparent-with-image {
-        transition: all 0.5s ease;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 20;
-        background: transparent;
-
-        .header-background {
-            transition: all 0.5s ease;
-            background: transparent;
-
-        }
-    }
-
-    .navigation-holder.not-transparent.scrolled {
-        background-color: var(--headerBg);
-        box-shadow: 0px 0px 4px -2px grey;
-        border-bottom: none;
-        transition: all 0.5s ease;
-
-
-        .module-menu ul li a {
-            color: var(--menuColor) !important;
-        }
-
-        .navbar .logo-text {
-            color: var(--menuColor) !important;
-        }
-
-        .header-background {
-            transition: all 0.5s ease;
-            background-color: var(--headerBg);
-        }
-    }
-}
-
 
 
 .price-lists-7 {
@@ -512,18 +180,6 @@ $textOnDarkBackground: $white !default;
     background-image: unset;
 }
 
-.mw-big-dropdown.dropdown-menu > li > a:hover {
-    background-color: var(--primaryColor)!important;
-}
-
-.nav-link {
-    color: var(--primaryColor) !important;
-}
-
-.mw-big-dropdown.dropdown-menu > li > a:hover {
-    color: var(--links)!important;
-}
-
 .new-skin-shop {
     .shop-inner-gallery .shop-inner-gallery-thumbnails {
 
@@ -618,8 +274,7 @@ $textOnDarkBackground: $white !default;
     }
 
     .content-73-btn {
-        background-color: #ffffff!important;
-        color: #1F7CFF!important;
+
         border-color: #ffffff!important;
         border-radius: 10px!important;
         font-size: 18px!important;
@@ -627,8 +282,7 @@ $textOnDarkBackground: $white !default;
     }
 
     .content-73-btn-2 {
-        background-color: #1F7CFF!important;
-        color: #ffffff!important;
+
         border-color: #ffffff!important;
         border-radius: 10px!important;
         font-size: 18px!important;
@@ -636,13 +290,10 @@ $textOnDarkBackground: $white !default;
     }
 
     .absolute-container {
-        background-color: #1F7CFF!important;
         top: -35%;
         left: 25%;
         border-radius: 10px;
-        h1 {
-            color: #ffffff;
-        }
+
 
     }
 
@@ -667,8 +318,8 @@ $textOnDarkBackground: $white !default;
 .mw-layout-parallax {
     .mw-layout-background-block {
         .mw-layout-background-node {
-             background-position: center bottom;
-             background-attachment: fixed !important;
+            background-position: center center;
+            background-attachment: fixed !important;
         }
     }
 }
@@ -756,318 +407,21 @@ $textOnDarkBackground: $white !default;
     }
 }
 
-.module-menu {
-
-    ul {
-        li {
-            @media screen and (max-width: 767px) {
-
-                a {
-                    text-align: center;
-                }
-            }
-
-            a {
-                font-family: var(--menuFontFamily) !important;
-                font-size: var(--menuFontSize) !important;
-
-            }
-
-            a {
-                color: var(--menuColor) !important;
-                display: inline-block ;
-                position: relative ;
-
-            }
 
 
-            a:hover, a:hover span {
-                color: var(--menuHoverColor);
-            }
-
-
-            > ul {
-
-                ul {
-
-                    left: 100%;
-                    top: 0;
-                }
-            }
-            > ul {
-                opacity: 0;
-
-            }
-
-            &:hover {
-                > ul {
-                    position: absolute;
-                    display: block;
-                    opacity: 1;
-
-                }
-
-            }
-        }
-
-        transition: .6s;
-    }
-}
-
-
-.header-background {
-    background-color: var(--headerBg);
-    padding: 10px;
-
-    .nav-link {
-        color: var(--navLinkFontColor) !important;
-        font-size: var(--navLinkFontSize) !important;
-        font-family: var(--navLinkFontFamily) !important;
-        &:hover, &:hover span {
-            color: var(--navLinkHoverColor) !important;
-        }
-        &.active, &:active span {
-            color: var(--navLinkActiveColor) !important;
-        }
-    }
-
-}
-
-
-.footer-background {
-    position: relative;
-    background-color: var(--footerBg);
-
-    p, small {
-        color: var(--footerTextColor);
-    }
-    a {
-        color: var(--footerLinkColor) !important;
-        &:hover, &:hover span {
-            color: var(--footerHoverLinkColor) !important;
-        }
-    }
-
-    .module-menu ul li a {
-        color: var(--footerLinkColor) !important;
-        &:hover, &:hover span {
-            color: var(--footerHoverLinkColor) !important;
-        }
-    }
-}
 
 .badge.badge-number, #btn-header-layout-btn {
     padding: 7px 11px !important;
 }
 
-a i:before {
-    color: var(--primaryColor);
-}
 
-a, .btn-link {
-    color: var(--links) !important;
-    line-height: var(--lineHeight);
-    letter-spacing: var(--letterSpacing);
-}
 
-.btn:not(.btn-link) {
-    border-radius: var(--btnBorderRadius);
-    border-color: var(--btnBorderColor);
-    border-width: var(--btnBorderSize);
-    border-style: var(--btnBorderStyle);
-    color: var(--btnTextColor) !important;
 
-    a:not(.btn-outline, .btn-outline-secondary, .btn-outline-primary), &.a:not(.btn-outline, .btn-outline-secondary, .btn-outline-primary) {
-        color: var(--btnTextColor) !important;
-     }
-
-    background-color: var(--tblr-btn-bg);
-    &:hover, &:focus, &.active, &:active {
-        background-color: var(--btnBackgroundHover);
-        color: var(--btnTextHoverColor);
-        outline: 0 none !important;
-        box-shadow: none !important;
-        border-color: color-mix(in srgb, var(--formControlBackground) 50%, transparent) !important;
-
-    }
-
-    &:hover, &.focus, &.active, &:active {
-        i {
-            color: var(--btnTextHoverColor);
-        }
-    }
-}
-
-.btn:not(.btn-link, .btn-sm) {
-    padding-block: var(--btnPaddingBlock);
-    padding-inline: var(--btnPaddingInline);
-}
 
 .btn-sm {
     padding: 5px 15px;
 }
 
-
-
-.btn-secondary {
-    color: var(--btnSecondaryText) !important;
-    background-color: var(--btnSecondaryBackground) !important;
-
-    &:hover, &:focus, &.active, &:active {
-        background-color: var(--btnSecondaryBackgroundHover) !important;
-        color: var(--btnSecondaryTextHoverColor) !important;
-    }
-}
-
-.btn.btn-outline, .btn.btn-outline-primary, .btn.btn-outline-secondary {
-    color: var(--btnOutlineText) !important;
-    background-color: var(--btnOutlineBackground) !important;
-
-    &:hover, &:focus, &.active, &:active {
-        background-color: var(--btnOutlineBackgroundHover) !important;
-        color: var(--btnOutlineTextHoverColor) !important;
-    }
-
-    a, &.a {
-        color: var(--btnOutlineText) !important;
-    }
-}
-
-.form-label {
-    color: var(--formLabelColor);
-    font-size: var(--formLabelFontSize);
-}
-
-input.form-control, textarea.form-control, select.form-control, select.form-select {
-    border-radius: var(--formControlBorderRadius);
-    border-color: var(--formControlBorderColor);
-    border-width: var(--formControlBorderSize);
-    border-style: var(--formControlBorderStyle);
-    background-color: var(--formControlBackground);
-    padding-block: var(--formControlPaddingBlock);
-    padding-inline: var(--formControlPaddingInline);
-    color: var(--formControlTextColor);
-    &:hover, &:focus, &.active, &:active {
-        color: var(--formControlTextHoverColor);
-        background-color: var(--formControlBackground);
-    }
-
-    &::placeholder {
-        color: var(--formControlPlaceholderColor);
-    }
-
-}
-//textarea:focus,
-//input[type="text"]:focus,
-//input[type="password"]:focus,
-//input[type="datetime"]:focus,
-//input[type="datetime-local"]:focus,
-//input[type="date"]:focus,
-//input[type="month"]:focus,
-//input[type="time"]:focus,
-//input[type="week"]:focus,
-//input[type="number"]:focus,
-//input[type="email"]:focus,
-//input[type="url"]:focus,
-//input[type="search"]:focus,
-//input[type="tel"]:focus,
-//input[type="color"]:focus,
-//.uneditable-input:focus {
-//    border-color: color-mix(in srgb, var(--formControlBackground) 50%, transparent);
-//    box-shadow: none;
-//    outline: 0 none;
-//}
-
-.testimonials-background-variable {
-    background-color: var(--testimonialBackgroundVariable);
-}
-
-.testimonialBorderVariable {
-    border-color: var(--testimonialBorderVariable) !important;
-}
-p {
-    font-size: var(--paragraphSize);
-    color: var(--paragraphColor);
-    line-height: var(--lineHeight);
-    letter-spacing: var(--letterSpacing);
-}
-
-.mw-layout-dark-background{
-    h1,h2,h3,h4,h5,h6,p {
-        color: var(--textOnDarkBackground);
-    }
-}
-
-h1 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingOne);
-    }
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-
-}
-
-h2 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingTwo);
-    }
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-}
-
-h3 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingThree);
-    }
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-}
-
-h4 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingFour);
-    }
-
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-
-}
-
-h5 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingFive);
-    }
-
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-}
-
-h6 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingSix);
-    }
-
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-}
 
 .mw-scale-hover-effect {
     transform: scale(1);
@@ -1106,14 +460,6 @@ h6 {
 }
 
 .page-item {
-    &.active, &:hover, &:focus {
-        .page-link {
-            background-color: var(--primaryColor) !important;
-            border-color: var(--primaryColor) !important;
-            color: var(--btnTextColor) !important;
-        }
-    }
-
     .page-link {
         font-weight: normal !important;
         border-radius: 50% !important;
@@ -1132,16 +478,18 @@ h6 {
     border-color: #000 !important;
 }
 
-.mw-breadcrumb-current{
-    color: var(--primaryColor);
-}
 
 
 body.js-dusk-browser-test {
-    .mh-100vh, .module-background {
+    .mh-100vh, .guesthouse-header {
+        max-height: 500px !important;
         min-height: 500px !important;
     }
 
+
+    .module-background {
+        min-height: unset !important;
+    }
 }
 
 .mw-shop-module-wrapper {
@@ -1233,7 +581,7 @@ body.js-dusk-browser-test {
 }
 
 .mw-message-form-wrapper .text-success {
-   position: relative;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1329,4 +677,8 @@ body.js-dusk-browser-test {
     background-color: #000 !important;
     border-color: #000 !important;
     color: #fff !important;
+}
+
+.font-weight-bold {
+    font-weight: bold !important;
 }

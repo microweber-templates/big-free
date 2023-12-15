@@ -413,7 +413,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background-color: var(--primaryColor);
+        background-color: var(--mw-primary-color);
         transform: translateX(100%);
         transition: all .5s ease;
         z-index: -1;
@@ -443,7 +443,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background-color: var(--primaryColor);
+        background-color: var(--mw-primary-color);
         transform: translateX(-100%);
         transition: all .5s ease;
         z-index: -1;

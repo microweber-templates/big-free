@@ -28,7 +28,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
 
 <section class="section mw-layout-dark-background py-0 d-flex align-items-center justify-content-center">
-    <module type="background" data-background-image="<?php print template_url(); ?>assets/img/layouts/gallery-1-5.jpg" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="background" data-background-color="#00000060" data-background-image="<?php print template_url(); ?>assets/img/layouts/gallery-1-5.jpg" id="background-layout--<?php print $params['id'] ?>" />
     <div class="mw-layout-container py-4 container mh-100vh d-flex align-items-center justify-content-center no-element edit   no-typing no-select" field="layout-header-skin-2-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center">
             <div class="col-12  safe-mode  mx-auto text-white   safe-mode allow-select">

@@ -139,6 +139,13 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 //          ]
 //        ];
 
+        $modulesDefault = [
+            [
+                'module'=>'layouts'
+            ]
+        ];
+        $modules = array_merge($modules,$modulesDefault);
+
         $this->browse(function (Browser $browser) use($modules) {
 
             foreach($modules as $module) {

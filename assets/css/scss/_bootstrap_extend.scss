@@ -60,7 +60,7 @@
 
 .btn-link {
     padding: 3px;
-    color: var(--primaryColor);
+    color: var(--mw-primary-color);
 }
 
 //.rounded-sm {
@@ -289,7 +289,7 @@ hr {
     min-width: 65px;
     width: 10%;
     height: 4px;
-    background-color: var(--primaryColor);
+    background-color: var(--mw-primary-color);
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -307,7 +307,7 @@ hr {
         content: '';
         width: 65px;
         height: 4px;
-        background-color: var(--primaryColor);
+        background-color: var(--mw-primary-color);
         position: absolute;
     }
 
@@ -574,7 +574,7 @@ hr {
 //----------------------------------------------------/
 .hover-bg-primary {
     &:hover {
-        background-color: var(--primaryColor);
+        background-color: var(--mw-primary-color);
     }
 
     &.hover-text-light {
@@ -608,7 +608,7 @@ hr {
     &.hover-text-dark {
         &:hover {
             .text-primary {
-                color: var(--primaryColor);
+                color: var(--mw-primary-color);
             }
         }
     }
@@ -646,7 +646,7 @@ hr {
 // Background on hover
 //----------------------------------------------------/
 .hover-text-primary:hover {
-    color: var(--primaryColor);
+    color: var(--mw-primary-color);
 }
 
 .hover-text-secondary:hover {
@@ -681,7 +681,7 @@ hr {
 // Border color
 //----------------------------------------------------/
 .border-color-primary {
-    border-color: var(--primaryColor);
+    border-color: var(--mw-primary-color);
 }
 
 .border-color-secondary {
@@ -713,7 +713,7 @@ hr {
 }
 
 .hover-border-color-primary:hover {
-    border-color: var(--primaryColor);
+    border-color: var(--mw-primary-color);
 }
 
 .hover-border-color-secondary:hover {

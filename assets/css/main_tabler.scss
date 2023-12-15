@@ -1,6 +1,8 @@
 //Bootstrap
+
 @import '../../../../modules/microweber/api/libs/mw-ui/grunt/plugins/tabler-ui/dist/css/tabler.min.css';
 @import '../../../../modules/microweber/api/libs/mw-ui/grunt/plugins/tabler-ui/dist/css/tabler-vendors.css';
+@import '../../../../modules/microweber/api/libs/bootstrap5/scss/mixins/_breakpoints.scss';
 
 
 
@@ -11,7 +13,8 @@
 @import "scss/_sections";
 @import "scss/_mw";
 @import "scss/_styles";
-//@import "scss/_bootstrap_extend";
+@import "scss/_bootstrap_extend";
+
 
 
 

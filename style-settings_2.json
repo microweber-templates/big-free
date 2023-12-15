@@ -1,0 +1,1422 @@
+{
+    "settings": [
+        {
+            "title": "Typography",
+            "description": "Customize your site's typography to achieve the style you want.",
+            "settings": [
+                {
+                    "title": "Font Pack",
+                    "description": "Choose a font pack to use for your site.",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldType": "fontFamily",
+                    "fieldSettings": {
+                        "property": "--fontFamily"
+                    }
+                },
+                {
+                    "title": "Font Size",
+                    "description": "Choose a font size to use for your site.",
+                    "fieldType": "rangeSlider",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--bodyFontSize",
+                        "min": 1,
+                        "max": 120,
+                        "step": 0.1,
+                        "unit": "px"
+                    }
+                },
+                {
+                    "title": "Spacing",
+                    "description": "Pick a spacing style, and customize it to achieve the style you want.",
+                    "settings": [
+                        {
+                            "title": "Line Height",
+                            "description": "Choose a line height to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--lineHeight",
+                                "min": 0.5,
+                                "max": 3,
+                                "step": 0.1,
+                                "unit": "em"
+                            }
+                        },
+                        {
+                            "title": "Letter Spacing",
+                            "description": "Choose a letter spacing to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--letterSpacing",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all spacing styles.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--lineHeight",
+                                    "--letterSpacing"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Headings",
+                    "description": "Pick a element heading sizes, and customize it to achieve the style you want.",
+                    "settings": [
+                        {
+                            "title": "Heading 1",
+                            "description": "Heading 1 is typically used for page titles. Changes affect all Heading 1s.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--headingOne",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Heading 2",
+                            "description": "Heading 3 is typically used for page titles. Changes affect all Heading 1s.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--headingTwo",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Heading 3",
+                            "description": "Heading 3 is typically used for page titles. Changes affect all Heading 1s.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--headingThree",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Heading 4",
+                            "description": "Heading 4 is typically used for page titles. Changes affect all Heading 1s.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--headingFor",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Heading 5",
+                            "description": "Heading 5 is typically used for page titles. Changes affect all Heading 1s.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--headingFive",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Heading 6",
+                            "description": "Heading 6 is typically used for page titles. Changes affect all Heading 1s.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--headingSix",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all heading styles.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--headingOne",
+                                    "--headingTwo",
+                                    "--headingThree",
+                                    "--headingFor",
+                                    "--headingFive",
+                                    "--headingSix"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Paragraphs",
+                    "description": "Paragraphs are typically used for body text. Changes affect all paragraphs.",
+                    "settings": [
+                        {
+                            "title": "Paragraph",
+                            "description": "Paragraphs are typically used for body text. Changes affect all paragraphs.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--paragraphSize",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all heading styles.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--paragraphSize"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Clear All",
+                    "description": "Clear all font styles.",
+                    "fieldType": "clearAll",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "properties": [
+                            "--fontFamily",
+                            "--bodyFontSize"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Layouts",
+            "description": "Pick a layout, and customize it to achieve the style you want.",
+            "settings": [
+                {
+                    "title": "Testimonials",
+                    "description": "Pick a layout, and customize it to achieve the style you want.",
+                    "settings": [
+                        {
+                            "title": "Testimonials box background",
+                            "description": "Choose a background color for the testimonials box.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--testimonialBackgroundVariable"
+                            }
+                        },
+                        {
+                            "title": "Testimonials border color",
+                            "description": "Choose a border color for the testimonials box.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--testimonialBorderVariable"
+                            }
+                        },
+                        {
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Colors",
+            "description": "Pick a color palette, and customize it to achieve the style you want.",
+            "settings": [
+
+                {
+                    "title": "Color Palette",
+                    "description": "Choose a color palette to use for your site.",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldType": "colorPalette",
+                    "fieldSettings": {
+                        "colorPaletteFromTemplateFolderLibrary": [
+                            "assets/design-styles/colors"
+                        ],
+                        "colorPaletteFromTemplateFilesLibrary111": [
+                            "assets/color-palettes.json"
+                        ],
+                        "colors111": [
+                            {
+                                "name": "Big",
+                                "mainColors": [
+                                    "#f4a261",
+                                    "#6c757d",
+                                    "#212529"
+                                ],
+                                "properties": {
+                                    "--fontFamily": "Jost, sans-serif",
+                                    "--primaryColor": "#f4a261",
+                                    "--links": "#000000",
+                                    "--background": "#ffffff",
+                                    "--secodnary": "#6c757d",
+                                    "--textDark": "#212529",
+                                    "--textLight": "#212529",
+                                    "--section": "#ffffff",
+                                    "--bodyFontSize": "16px",
+                                    "--headerBg": "#ffffff",
+                                    "--topHeaderBg": "#000000",
+                                    "--topHeaderElements": "#ffffff",
+                                    "--menuColor": "#000000",
+                                    "--menuHoverColor": "#000000",
+                                    "--btnText": "#ffffff",
+                                    "--menuFontSize": "16px",
+                                    "--menuFontFamily": "Jost, sans-serif",
+                                    "--lineHeight": "1.5",
+                                    "--letterSpacing": "0",
+                                    "--fontWeight": "400",
+                                    "--textTransform": "none",
+                                    "--paragraphColor": "#000000",
+                                    "--headingColor": "#000000",
+                                    "--paragraphSize": "1rem",
+                                    "--headingOne": "64px",
+                                    "--headingTwo": "52px",
+                                    "--headingThree": "44px",
+                                    "--headingFour": "32px",
+                                    "--headingFive": "24px",
+                                    "--headingSix": "20px",
+                                    "--btnBorderRadius": "33px",
+                                    "--btnBorderColor": "#f4a261",
+                                    "--btnBorderSize": "2px",
+                                    "--btnBorderStyle": "solid",
+                                    "--btnPaddingBlock": "15px",
+                                    "--btnPaddingInline": "24px",
+                                    "--btnBackground": "#f4a261",
+                                    "--btnBackgroundHover": "#e76f51",
+                                    "--btnTextHoverColor": "#ffffff",
+                                    "--btnSecondaryBackground": "#FF5E00",
+                                    "--btnSecondaryBackgroundHover": "#000000",
+                                    "--btnSecondaryText": "#ffffff",
+                                    "--btnSecondaryTextHoverColor": "#ffffff",
+                                    "--btnOutlineBackground": "transparent",
+                                    "--btnOutlineBackgroundHover": "#f4a261",
+                                    "--btnOutlineText": "#f4a261",
+                                    "--btnOutlineTextHoverColor": "#ffffff",
+                                    "--formControlBorderRadius": "2px",
+                                    "--formControlBorderSize": "2px",
+                                    "--formControlBorderStyle": "solid",
+                                    "--formControlBorderColor": "#ced4da",
+                                    "--formControlPaddingBlock": "15px",
+                                    "--formControlPaddingInline": "15px",
+                                    "--formControlPlaceholderColor": "#6c757d",
+                                    "--formControlBackground": "#ffffff",
+                                    "--formControlTextColor": "#000000",
+                                    "--formControlTextHoverColor": "#000000",
+                                    "--formLabel": "#000000",
+                                    "--formLabelFontSize": "16px",
+                                    "--footerBg": "#ffffff",
+                                    "--footerTextColor": "#000000",
+                                    "--footerLinkColor": "#000000",
+                                    "--footerHoverLinkColor": "#000000",
+                                    "--headerBtnColor": "#ffffff",
+                                    "--navFontColor": "#000000",
+                                    "--navFontSize": "16px",
+                                    "--navFontFamily": "Jost, sans-serif",
+                                    "--navLinkFontColor": "#000000",
+                                    "--navLinkFontSize": "16px",
+                                    "--navLinkFontFamily": "Jost, sans-serif",
+                                    "--navLinkHoverColor": "#6c757d",
+                                    "--navLinkActiveColor": "#6c757d",
+                                    "--hamburgerBorderRadius": "0",
+                                    "--hamburgerBorderSize": "1px",
+                                    "--hamburgerBorderStyle": "solid",
+                                    "--hamburgerBorderColor": "#000000",
+                                    "--hamburgerBackground": "transparent",
+                                    "--hamburgerIconSize": "16px",
+                                    "--hamburgerIconColor": "#000000",
+                                    "--testimonialBackgroundVariable": "#ffffff",
+                                    "--testimonialBorderVariable": "#000000",
+                                    "--textOnDarkBackground": "#ffffff"
+                                }
+                            },
+
+                            {
+                                "name": "Bamboo",
+                                "mainColors": [
+                                    "#2c2c2c",
+                                    "#828282",
+                                    "#6c757d"
+                                ],
+                                "properties": {
+                                    "--fontFamily": "Milliard, sans-serif",
+                                    "--primaryColor": "#2c2c2c",
+                                    "--links": "#828282",
+                                    "--background": "#ffffff",
+                                    "--secodnary": "#6c757d",
+                                    "--textDark": "#212529",
+                                    "--textLight": "#212529",
+                                    "--section": "#ffffff",
+                                    "--bodyFontSize": "18px",
+                                    "--headerBg": "#ffffff",
+                                    "--topHeaderBg": "#000000",
+                                    "--topHeaderElements": "#ffffff",
+                                    "--menuColor": "#000000",
+                                    "--menuHoverColor": "#000000",
+                                    "--btnText": "#ffffff",
+                                    "--menuFontSize": "16px",
+                                    "--menuFontFamily": "Jost, sans-serif",
+                                    "--lineHeight": "1.5",
+                                    "--letterSpacing": "0",
+                                    "--fontWeight": "400",
+                                    "--textTransform": "none",
+                                    "--paragraphColor": "#000000",
+                                    "--headingColor": "#000000",
+                                    "--paragraphSize": "1rem",
+                                    "--headingOne": "64px",
+                                    "--headingTwo": "52px",
+                                    "--headingThree": "44px",
+                                    "--headingFour": "32px",
+                                    "--headingFive": "24px",
+                                    "--headingSix": "20px",
+                                    "--btnBorderRadius": "33px",
+                                    "--btnBorderColor": "#2c2c2c",
+                                    "--btnBorderSize": "2px",
+                                    "--btnBorderStyle": "solid",
+                                    "--btnPaddingBlock": "15px",
+                                    "--btnPaddingInline": "24px",
+                                    "--btnBackground": "#2c2c2c",
+                                    "--btnBackgroundHover": "#e76f51",
+                                    "--btnTextHoverColor": "#ffffff",
+                                    "--btnSecondaryBackground": "#FF5E00",
+                                    "--btnSecondaryBackgroundHover": "#000000",
+                                    "--btnSecondaryText": "#ffffff",
+                                    "--btnSecondaryTextHoverColor": "#ffffff",
+                                    "--btnOutlineBackground": "transparent",
+                                    "--btnOutlineBackgroundHover": "#2c2c2c",
+                                    "--btnOutlineText": "#2c2c2c",
+                                    "--btnOutlineTextHoverColor": "#ffffff",
+                                    "--formControlBorderRadius": "2px",
+                                    "--formControlBorderSize": "2px",
+                                    "--formControlBorderStyle": "solid",
+                                    "--formControlBorderColor": "#ced4da",
+                                    "--formControlPaddingBlock": "15px",
+                                    "--formControlPaddingInline": "15px",
+                                    "--formControlPlaceholderColor": "#6c757d",
+                                    "--formControlBackground": "#ffffff",
+                                    "--formControlTextColor": "#000000",
+                                    "--formControlTextHoverColor": "#000000",
+                                    "--formLabel": "#000000",
+                                    "--formLabelFontSize": "16px",
+                                    "--footerBg": "#2b2b2b",
+                                    "--footerTextColor": "#000000",
+                                    "--footerLinkColor": "#000000",
+                                    "--footerHoverLinkColor": "#000000",
+                                    "--headerBtnColor": "#ffffff",
+                                    "--navFontColor": "#000000",
+                                    "--navFontSize": "16px",
+                                    "--navFontFamily": "Jost, sans-serif",
+                                    "--navLinkFontColor": "#000000",
+                                    "--navLinkFontSize": "16px",
+                                    "--navLinkFontFamily": "Jost, sans-serif",
+                                    "--navLinkHoverColor": "#6c757d",
+                                    "--navLinkActiveColor": "#6c757d",
+                                    "--hamburgerBorderRadius": "0",
+                                    "--hamburgerBorderSize": "1px",
+                                    "--hamburgerBorderStyle": "solid",
+                                    "--hamburgerBorderColor": "#000000",
+                                    "--hamburgerBackground": "transparent",
+                                    "--hamburgerIconSize": "16px",
+                                    "--hamburgerIconColor": "#000000",
+                                    "--testimonialBackgroundVariable": "#ffffff",
+                                    "--testimonialBorderVariable": "#000000",
+                                    "--textOnDarkBackground": "#ffffff"
+                                }
+                            },
+                            { "name": "Urban", "mainColors": [ "#fafafa", "#fb8483", "#000000", "#936862", "#e4e1d8" ], "properties": { "--primaryColor": "#fb8483", "--links": "#000000", "--background": "#e4e1d8", "--secondary": "#936862", "--textDark": "#000000", "--textLight": "#fafafa", "--section": "#fafafa", "--headerBg": "#fafafa", "--topHeaderBg": "#000000", "--topHeaderElements": "#fafafa", "--menuColor": "#000000", "--menuHoverColor": "#fb8483", "--btnText": "#fafafa", "--textTransform": "none", "--paragraphColor": "#000000", "--headingColor": "#000000", "--btnBorderColor": "#fb8483", "--btnBackground": "#fb8483", "--btnBackgroundHover": "#e76f51", "--btnTextHoverColor": "#fafafa", "--btnSecondaryBackground": "#FF5E00", "--btnSecondaryBackgroundHover": "#000000", "--btnSecondaryText": "#fafafa", "--btnSecondaryTextHoverColor": "#fafafa", "--btnOutlineBackground": "transparent", "--btnOutlineBackgroundHover": "#fb8483", "--btnOutlineText": "#fb8483", "--btnOutlineTextHoverColor": "#fafafa", "--formControlBorderColor": "#ced4da", "--formControlPlaceholderColor": "#6c757d", "--formControlBackground": "#fafafa", "--formControlTextColor": "#000000", "--formControlTextHoverColor": "#000000", "--formLabel": "#000000", "--footerBg": "#fafafa", "--footerTextColor": "#000000", "--footerLinkColor": "#000000", "--footerHoverLinkColor": "#000000", "--headerBtnColor": "#fafafa", "--navFontColor": "#000000", "--navLinkFontColor": "#000000", "--navLinkHoverColor": "#936862", "--navLinkActiveColor": "#936862", "--hamburgerBorderColor": "#000000", "--hamburgerBackground": "transparent", "--hamburgerIconColor": "#000000", "--testimonialBackgroundVariable": "#fafafa", "--testimonialBorderVariable": "#000000", "--textOnDarkBackground": "#fafafa" } } ,
+
+                            {
+                                "name": "Flower",
+                                "mainColors": [
+                                    "#ff2359",
+                                    "#828282",
+                                    "#212529"
+                                ],
+                                "properties": {
+                                    "--fontFamily": "Milliard, sans-serif",
+                                    "--primaryColor": "#ff2359",
+                                    "--links": "#828282",
+                                    "--background": "#ffffff",
+                                    "--secodnary": "#6c757d",
+                                    "--textDark": "#212529",
+                                    "--textLight": "#212529",
+                                    "--section": "#ffffff",
+                                    "--bodyFontSize": "18px",
+                                    "--headerBg": "#ffffff",
+                                    "--topHeaderBg": "#000000",
+                                    "--topHeaderElements": "#ffffff",
+                                    "--menuColor": "#000000",
+                                    "--menuHoverColor": "#000000",
+                                    "--btnText": "#ffffff",
+                                    "--menuFontSize": "16px",
+                                    "--menuFontFamily": "Jost, sans-serif",
+                                    "--lineHeight": "1.5",
+                                    "--letterSpacing": "0",
+                                    "--fontWeight": "400",
+                                    "--textTransform": "none",
+                                    "--paragraphColor": "#000000",
+                                    "--headingColor": "#000000",
+                                    "--paragraphSize": "1rem",
+                                    "--headingOne": "64px",
+                                    "--headingTwo": "52px",
+                                    "--headingThree": "44px",
+                                    "--headingFour": "32px",
+                                    "--headingFive": "24px",
+                                    "--headingSix": "20px",
+                                    "--btnBorderRadius": "0",
+                                    "--btnBorderColor": "#ff2359",
+                                    "--btnBorderSize": "2px",
+                                    "--btnBorderStyle": "solid",
+                                    "--btnPaddingBlock": "15px",
+                                    "--btnPaddingInline": "24px",
+                                    "--btnBackground": "#ff2359",
+                                    "--btnBackgroundHover": "#e76f51",
+                                    "--btnTextHoverColor": "#ffffff",
+                                    "--btnSecondaryBackground": "#FF5E00",
+                                    "--btnSecondaryBackgroundHover": "#000000",
+                                    "--btnSecondaryText": "#ffffff",
+                                    "--btnSecondaryTextHoverColor": "#ffffff",
+                                    "--btnOutlineBackground": "transparent",
+                                    "--btnOutlineBackgroundHover": "#ff2359",
+                                    "--btnOutlineText": "#ff2359",
+                                    "--btnOutlineTextHoverColor": "#ffffff",
+                                    "--formControlBorderRadius": "0",
+                                    "--formControlBorderSize": "2px",
+                                    "--formControlBorderStyle": "solid",
+                                    "--formControlBorderColor": "#ced4da",
+                                    "--formControlPaddingBlock": "15px",
+                                    "--formControlPaddingInline": "15px",
+                                    "--formControlPlaceholderColor": "#6c757d",
+                                    "--formControlBackground": "#ffffff",
+                                    "--formControlTextColor": "#000000",
+                                    "--formControlTextHoverColor": "#000000",
+                                    "--formLabel": "#000000",
+                                    "--formLabelFontSize": "16px",
+                                    "--footerBg": "#2b2b2b",
+                                    "--footerTextColor": "#000000",
+                                    "--footerLinkColor": "#000000",
+                                    "--footerHoverLinkColor": "#000000",
+                                    "--headerBtnColor": "#ffffff",
+                                    "--navFontColor": "#000000",
+                                    "--navFontSize": "16px",
+                                    "--navFontFamily": "Jost, sans-serif",
+                                    "--navLinkFontColor": "#000000",
+                                    "--navLinkFontSize": "16px",
+                                    "--navLinkFontFamily": "Jost, sans-serif",
+                                    "--navLinkHoverColor": "#6c757d",
+                                    "--navLinkActiveColor": "#6c757d",
+                                    "--hamburgerBorderRadius": "0",
+                                    "--hamburgerBorderSize": "1px",
+                                    "--hamburgerBorderStyle": "solid",
+                                    "--hamburgerBorderColor": "#000000",
+                                    "--hamburgerBackground": "transparent",
+                                    "--hamburgerIconSize": "16px",
+                                    "--hamburgerIconColor": "#000000",
+                                    "--testimonialBackgroundVariable": "#ffffff",
+                                    "--testimonialBorderVariable": "#000000",
+                                    "--textOnDarkBackground": "#ffffff"
+                                }
+                            },
+                            { "name": "Swans Down", "mainColors": [ "#e4e1d8", "#7BC5AE", "#028C6A", "black", "#D1EDE1" ], "properties": { "--primaryColor": "#e4e1d8", "--links": "#7BC5AE", "--background": "#028C6A", "--secondary": "black", "--textDark": "#D1EDE1", "--textLight": "#D1EDE1", "--section": "#e4e1d8", "--headerBg": "#e4e1d8", "--topHeaderBg": "black", "--topHeaderElements": "#e4e1d8", "--menuColor": "black", "--menuHoverColor": "black", "--btnText": "#e4e1d8", "--textTransform": "none", "--paragraphColor": "black", "--headingColor": "black", "--btnBorderColor": "#e4e1d8", "--btnBackground": "#e4e1d8", "--btnBackgroundHover": "#7BC5AE", "--btnTextHoverColor": "#e4e1d8", "--btnSecondaryBackground": "#028C6A", "--btnSecondaryBackgroundHover": "black", "--btnSecondaryText": "#e4e1d8", "--btnSecondaryTextHoverColor": "#e4e1d8", "--btnOutlineBackground": "transparent", "--btnOutlineBackgroundHover": "#e4e1d8", "--btnOutlineText": "#e4e1d8", "--btnOutlineTextHoverColor": "#e4e1d8", "--formControlBorderColor": "#D1EDE1", "--formControlPlaceholderColor": "black", "--formControlBackground": "#e4e1d8", "--formControlTextColor": "black", "--formControlTextHoverColor": "black", "--formLabel": "black", "--footerBg": "#e4e1d8", "--footerTextColor": "black", "--footerLinkColor": "black", "--footerHoverLinkColor": "black", "--headerBtnColor": "#e4e1d8", "--navFontColor": "black", "--navLinkFontColor": "black", "--navLinkHoverColor": "#7BC5AE", "--navLinkActiveColor": "#7BC5AE", "--hamburgerBorderColor": "black", "--hamburgerBackground": "transparent", "--hamburgerIconColor": "black", "--testimonialBackgroundVariable": "#e4e1d8", "--testimonialBorderVariable": "black", "--textOnDarkBackground": "#D1EDE1" } }    ,
+                            { "name": "Blue Brown", "mainColors": [ "#9ebbcb", "#fdfbfa", "#655d5b", "#aaa9a8", "#000000" ], "properties": { "--primaryColor": "#9ebbcb", "--links": "#000000", "--background": "#fdfbfa", "--secondary": "#655d5b", "--textDark": "#655d5b", "--textLight": "#fdfbfa", "--section": "#fdfbfa", "--headerBg": "#9ebbcb", "--topHeaderBg": "#000000", "--topHeaderElements": "#fdfbfa", "--menuColor": "#000000", "--menuHoverColor": "#655d5b", "--btnText": "#fdfbfa", "--textTransform": "none", "--paragraphColor": "#655d5b", "--headingColor": "#655d5b", "--btnBorderColor": "#9ebbcb", "--btnBackground": "#9ebbcb", "--btnBackgroundHover": "#aaa9a8", "--btnTextHoverColor": "#fdfbfa", "--btnSecondaryBackground": "#000000", "--btnSecondaryBackgroundHover": "#9ebbcb", "--btnSecondaryText": "#fdfbfa", "--btnSecondaryTextHoverColor": "#fdfbfa", "--btnOutlineBackground": "transparent", "--btnOutlineBackgroundHover": "#9ebbcb", "--btnOutlineText": "#9ebbcb", "--btnOutlineTextHoverColor": "#fdfbfa", "--formControlBorderColor": "#655d5b", "--formControlPlaceholderColor": "#655d5b", "--formControlBackground": "#fdfbfa", "--formControlTextColor": "#655d5b", "--formControlTextHoverColor": "#655d5b", "--formLabel": "#655d5b", "--footerBg": "#fdfbfa", "--footerTextColor": "#655d5b", "--footerLinkColor": "#655d5b", "--footerHoverLinkColor": "#655d5b", "--headerBtnColor": "#fdfbfa", "--navFontColor": "#fdfbfa", "--navLinkFontColor": "#655d5b", "--navLinkHoverColor": "#9ebbcb", "--navLinkActiveColor": "#9ebbcb", "--hamburgerBorderColor": "#000000", "--hamburgerBackground": "transparent", "--hamburgerIconColor": "#000000", "--testimonialBackgroundVariable": "#fdfbfa", "--testimonialBorderVariable": "#655d5b", "--textOnDarkBackground": "#fdfbfa" } }    ,
+                            {
+                                "name": "Private School",
+                                "mainColors": [
+                                    "#135200",
+                                    "#ffffff",
+                                    "#000000"
+                                ],
+                                "properties": {
+                                    "--headerBg": "#135200",
+                                    "--navLinkFontColor": "#ffffff",
+                                    "--primaryColor": "#000000",
+                                    "--btnBackground": "#135208",
+                                    "--btnBorderColor": "#135208",
+                                    "--btnHoverBottomBorderSize": "20px",
+                                    "--btnHoverTextDecoration": "underline",
+                                    "--btnTextColor": "#ffffff",
+                                    "--btnSecondaryBackground": "#135208",
+                                    "--btnOutlineText": "#135208",
+                                    "--btnBackgroundHover": "#0d3d05",
+                                    "--btnOutlineBackgroundHover": "#135208",
+                                    "--fontFamily": "Lora",
+                                    "--footerTextColor": "#ffffff",
+                                    "--footerLinkColor": "#ffffff",
+                                    "--footerHoverLinkColor": "#c4ffcd",
+                                    "--linkColor": "#000000",
+                                    "--links": "#000000",
+                                    "--btnOutlineTextHoverColor": "#ffffff",
+                                    "--background": "#f3f3ff"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "Custom colors",
+                    "description": "Choose custom colors to use for your site.",
+                    "fieldType": "infoBox"
+                },
+                {
+                    "title": "Body Background",
+                    "description": "Choose a body background to use for your site.",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--background"
+                    }
+                },
+                {
+                    "title": "Section Background",
+                    "description": "Choose a section background to use for your site.",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--section"
+                    }
+                },
+                {
+                    "title": "Primary Color",
+                    "description": "Choose a primary color to use for your site.",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--primaryColor"
+                    }
+                },
+                {
+                    "title": "Paragraph Color",
+                    "description": "Choose a paragraph color to use for your site.",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--paragraphColor"
+                    }
+                },
+                {
+                    "title": "Heading Color",
+                    "description": "Choose a heading color to use for your site.",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--headingColor"
+                    }
+                },
+                {
+                    "title": "Text on Dark Background",
+                    "description": "Choose a text on dark background color to use for your site.",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--textOnDarkBackground"
+                    }
+                },
+                {
+                    "title": "Clear All",
+                    "description": "Clear all the styles you have set for your site.",
+                    "fieldType": "clearAll",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "properties": [
+                            "--background",
+                            "--primaryColor",
+                            "--headingColor",
+                            "--paragraphColor",
+                            "--menuColor",
+                            "--headerBg",
+                            "--topHeaderBg",
+                            "--topHeaderElements",
+                            "--footerBg",
+                            "--lineHeight",
+                            "--letterSpacing",
+                            "--headingOne",
+                            "--headingTwo",
+                            "--headingThree",
+                            "--headingFour",
+                            "--headingFive",
+                            "--headingSix"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Header",
+            "description": "Pick a header style, and customize it to achieve the style you want.",
+            "settings": [
+                {
+                    "title": "Colors",
+                    "description": "Choose a header colors to use for your site.",
+                    "settings": [
+                        {
+                            "title": "Header Background",
+                            "description": "Choose a header background to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--headerBg"
+                            }
+                        },
+                        {
+                            "title": "Top Header Background",
+                            "description": "Choose a top header background to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--topHeaderBg"
+                            }
+                        },
+                        {
+                            "title": "Navigation",
+                            "description": "Choose a navigation colors to use for your site.",
+                            "settings": [
+                                {
+                                    "title": "Menu Color",
+                                    "description": "Choose a menu color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--navLinkFontColor"
+                                    }
+                                },
+                                {
+                                    "title": "Menu Hover Color",
+                                    "description": "Choose a menu hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--navLinkHoverColor"
+                                    }
+                                },
+                                {
+                                    "title": "Menu Active Color",
+                                    "description": "Choose a menu active color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--navLinkActiveColor"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Sizes",
+                    "description": "Choose a header sizes to use for your site.",
+                    "settings": [
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Forms",
+            "description": "Pick a form style, and customize it to achieve the style you want.",
+            "settings": [
+                {
+                    "title": "Colors",
+                    "description": "Choose a form colors to use for your site.",
+                    "settings": [
+                        {
+                            "title": "Form Input Background Color",
+                            "description": "Choose a form input background color to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formControlBackground"
+                            }
+                        },
+                        {
+                            "title": "Form Label Color",
+                            "description": "Choose a form label color to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formLabelColor"
+                            }
+                        },
+                        {
+                            "title": "Form Input Text Color",
+                            "description": "Choose a form input text color to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formControlTextColor"
+                            }
+                        },
+                        {
+                            "title": "Form Input Text Hover Color",
+                            "description": "Choose a form input text hover color to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formControlTextHoverColor"
+                            }
+                        },
+                        {
+                            "title": "Form Input Border Color",
+                            "description": "Choose a button border color to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formControlBorderColor"
+                            }
+                        },
+                        {
+                            "title": "Form Input Placeholder Color",
+                            "description": "Choose a button placeholder color to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formControlPlaceholderColor"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all form inputs styles you have set for your site.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--formControlBackground",
+                                    "--formLabelColor",
+                                    "--formControlTextColor",
+                                    "--formControlTextHoverColor",
+                                    "--formControlBorderColor",
+                                    "--formControlPlaceholderColor"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Sizes",
+                    "description": "Choose a form sizes to use for your site.",
+                    "settings": [
+                        {
+                            "title": "Form Label Font Size",
+                            "description": "Choose a form label font size to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formLabelFontSize",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Form Input Border Radius",
+                            "description": "Choose a form input border radius to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formControlBorderRadius",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Form Input Border Size",
+                            "description": "Choose a form input border size to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formControlBorderSize",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Form Input Padding Horizontal",
+                            "description": "Choose a form input padding horizontal to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formControlPaddingInline",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Form Input Padding Vertical",
+                            "description": "Choose a form input padding vertical to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--formControlPaddingBlock",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all form inputs styles you have set for your site.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--formControlBorderRadius",
+                                    "--formControlBorderSize",
+                                    "--formControlPaddingBlock",
+                                    "--formControlPaddingInline"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Buttons",
+            "description": "Pick a button style, and customize it to achieve the style you want.",
+            "settings": [
+                {
+                    "title": "Colors",
+                    "description": "Choose a button colors to use for your site.",
+                    "settings": [
+                        {
+                            "title": "Primary Button",
+                            "description": "Choose a primary button color to use for your site.",
+                            "settings": [
+                                {
+                                    "title": "Button Background Color",
+                                    "description": "Choose a button background color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnBackground"
+                                    }
+                                },
+                                {
+                                    "title": "Button Text Color",
+                                    "description": "Choose a button text color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnTextColor"
+                                    }
+                                },
+                                {
+                                    "title": "Button Border Color",
+                                    "description": "Choose a button border color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnBorderColor"
+                                    }
+                                },
+                                {
+                                    "title": "Button Background Hover Color",
+                                    "description": "Choose a button background hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnBackgroundHover"
+                                    }
+                                },
+                                {
+                                    "title": "Button Text Hover Color",
+                                    "description": "Choose a button text hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnTextHoverColor"
+                                    }
+                                },
+                                {
+                                    "title": "Clear All",
+                                    "description": "Clear all button styles you have set for your site.",
+                                    "fieldType": "clearAll",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "properties": [
+                                            "--btnBackground",
+                                            "--btnBackgroundHover",
+                                            "--btnTextColor",
+                                            "--btnTextHoverColor",
+                                            "--btnBorderColor"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Secondary Button",
+                            "description": "Choose a secondary button color to use for your site.",
+                            "settings": [
+                                {
+                                    "title": "Button Background Color",
+                                    "description": "Choose a button background color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnSecondaryBackground"
+                                    }
+                                },
+                                {
+                                    "title": "Button Text Color",
+                                    "description": "Choose a button text color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnSecondaryTextColor"
+                                    }
+                                },
+                                {
+                                    "title": "Button Border Color",
+                                    "description": "Choose a button border color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnSecondaryBorderColor"
+                                    }
+                                },
+                                {
+                                    "title": "Button Background Hover Color",
+                                    "description": "Choose a button background hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnSecondaryBackgroundHover"
+                                    }
+                                },
+                                {
+                                    "title": "Button Text Hover Color",
+                                    "description": "Choose a button text hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnSecondaryTextHoverColor"
+                                    }
+                                },
+                                {
+                                    "title": "Clear All",
+                                    "description": "Clear all button styles you have set for your site.",
+                                    "fieldType": "clearAll",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "properties": [
+                                            "--btnSecondaryBackground",
+                                            "--btnSecondaryBackgroundHover",
+                                            "--btnSecondaryTextColor",
+                                            "--btnSecondaryTextHoverColor",
+                                            "--btnSecondaryBorderColor"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Outline Button",
+                            "description": "Choose a outline button color to use for your site.",
+                            "settings": [
+                                {
+                                    "title": "Button Background Color",
+                                    "description": "Choose a button background color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnOutlineBackground"
+                                    }
+                                },
+                                {
+                                    "title": "Button Text Color",
+                                    "description": "Choose a button text color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnOutlineText"
+                                    }
+                                },
+                                {
+                                    "title": "Button Background Hover Color",
+                                    "description": "Choose a button background hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnOutlineBackgroundHover"
+                                    }
+                                },
+                                {
+                                    "title": "Button Text Hover Color",
+                                    "description": "Choose a button text hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "property": "--btnOutlineTextHoverColor"
+                                    }
+                                },
+                                {
+                                    "title": "Clear All",
+                                    "description": "Clear all button styles you have set for your site.",
+                                    "fieldType": "clearAll",
+                                    "selectors": [
+                                        ":root"
+                                    ],
+                                    "fieldSettings": {
+                                        "properties": [
+                                            "--btnBackground",
+                                            "--btnBackgroundHover",
+                                            "--btnTextColor",
+                                            "--btnTextHoverColor",
+                                            "--btnBorderColor"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Sizes",
+                    "description": "Choose a button sizes to use for your site.",
+                    "settings": [
+                        {
+                            "title": "Border Radius",
+                            "description": "Choose a button border radius to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--btnBorderRadius",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Border Size",
+                            "description": "Choose a button border size to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--btnBorderSize",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Padding Vertical",
+                            "description": "Choose a button padding vertical to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--btnPaddingBlock",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Padding Horizontal",
+                            "description": "Choose a button padding horizontal to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--btnPaddingInline",
+                                "min": 1,
+                                "max": 120,
+                                "step": 0.1,
+                                "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all button styles you have set for your site.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--btnBorderRadius",
+                                    "--btnBorderSize",
+                                    "--btnPaddingBlock",
+                                    "--btnPaddingInline"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Footer",
+            "description": "Pick a footer style, and customize it to achieve the style you want.",
+            "settings": [
+                {
+                    "title": "Colors",
+                    "description": "Choose a footer colors to use for your site.",
+                    "settings": [
+                        {
+                            "title": "Footer Background",
+                            "description": "Choose a footer background to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--footerBg"
+                            }
+                        },
+                        {
+                            "title": "Footer Text Color",
+                            "description": "Choose a footer text color to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--footerTextColor"
+                            }
+                        },
+                        {
+                            "title": "Footer Link Color",
+                            "description": "Choose a footer link color to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--footerLinkColor"
+                            }
+                        },
+                        {
+                            "title": "Footer Hover Link Color",
+                            "description": "Choose a footer hover link color to use for your site.",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--footerHoverLinkColor"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all footer styles you have set for your site.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--footerBg",
+                                    "--footerTextColor",
+                                    "--footerLinkColor",
+                                    "--footerHoverLinkColor"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Sizes",
+                    "description": "Choose a footer sizes to use for your site.",
+                    "settings": [
+                    ]
+                }
+            ]
+        },
+
+
+
+        {
+            "title": "Styles Library",
+            "description": "Pick the general styles you want to use for your site.",
+            "settings": [
+                {
+                    "fieldType": "button",
+                    "onClick": "alert('hello')" ,
+                    "title": "Open Styles Library",
+                    "description": "Pick the general styles you want to use for your site."
+                }
+            ]
+
+
+
+        }
+
+        ,
+        {
+            "title": "Styles Library",
+            "description": "Pick the general styles you want to use for your site.",
+            "settings": [
+                {
+                    "fieldType": "button",
+                    "onClick": "alert('hello')" ,
+                    "title": "Open Styles Library",
+                    "description": "Pick the general styles you want to use for your site."
+                }
+            ]
+
+        }
+
+    ]
+}
+

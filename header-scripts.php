@@ -44,11 +44,11 @@
     </script>
 
     <link href="<?php print template_url(); ?>assets/fonts/jost-font/font.css" rel="stylesheet"/>
-    <link href="<?php print template_url(); ?>assets/css/main_tabler.css" rel="stylesheet"/>
+    <link href="<?php print template_url(); ?>assets/css/main.css" rel="stylesheet"/>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
 
     <link href="<?php print template_url(); ?>assets/templates_features/css/scss/styles-for-template.css" rel="stylesheet"/>
+    <link href="<?php print template_url(); ?>assets/design-styles/design-styles.css" rel="stylesheet"/>
     <script src="<?php print template_url(); ?>assets/templates_features/js/js-for-template.js"></script>
 
     <?php print get_template_stylesheet(); ?>

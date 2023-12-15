@@ -29,7 +29,7 @@ if ($header_top_menu) {
 }
 ?>
 
-<section class="header-background px-0">
+<section class="header-background px-0" id="mw-header-background">
 
     <script>
 
@@ -43,7 +43,7 @@ if ($header_top_menu) {
     </script>
 
 
-    <div class="container-fluid px-5 justify-content-center">
+    <div class="container-fluid px-md-5 justify-content-center">
         <div class="row col-12 d-flex justify-content-center ">
            <module type="logo" id="header-logo-<?php print $params['id']; ?>" class="me-auto col-auto col-xl-4 mw-big-header-logo w-auto align-self-center  my-md-0 my-1 px-0 module module-logo "/>
 

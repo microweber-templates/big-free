@@ -19,36 +19,10 @@ p.lead-3: 36px;
  ******************************************* */
 
 
-html {
-    font-size: var(--bodyFontSize);
-}
-
-body {
-    background-color: var(--background);
-}
-
-i.mdi {
-    color: var(--primaryColor);
-}
-
-
-body, p , h1, h2, h3, h4, h5, h6, .navbar .logo-text {
-    font-family: var(--fontFamily);
-    font-display: swap;
-    text-align: var(--body-text-align);
-}
-
 .navbar .logo-text {
-    color: var(--primaryColor);
+    color: var(--mw-primary-color);
 }
 
-
-
-body,
-p {
-    line-height: 1.6;
-
-}
 
 
 
@@ -70,7 +44,7 @@ b, strong {
  ******************************************* */
 
 section.section {
-    background-color: var(--section);
+
 
     position: relative;
     &.d-flex {
@@ -255,7 +229,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             font-size: 30px;
-            color: var(--primaryColor);
+            color: var(--mw-primary-color);
         }
     }
 
@@ -385,7 +359,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
         bottom: 30px $mw-importance;
 
         .bx-pager-item a {
-            border: 1px solid var(--primaryColor) $mw-importance;
+            border: 1px solid var(--mw-primary-color) $mw-importance;
             height: 7px !important;
             width: 24px !important;
             -webkit-border-radius: 24px $mw-importance;
@@ -396,7 +370,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
         }
 
         .bx-pager-item a.active {
-            background: var(--primaryColor) $mw-importance;
+            background: var(--mw-primary-color) $mw-importance;
         }
     }
 }
@@ -432,7 +406,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
         }
 
         .bx-pager a.active {
-            background: var(--primaryColor) $mw-importance;
+            background: var(--mw-primary-color) $mw-importance;
         }
 
         .bx-controls-direction {
@@ -452,7 +426,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
 
             a:before {
                 font: normal normal normal 58px/1 "Material Design Icons";
-                color: var(--primaryColor);
+                color: var(--mw-primary-color);
                 font-size: 36px;
                 text-shadow: none;
                 display: inline-flex;
@@ -597,19 +571,19 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
 
 
 .navbar-toggler {
-    border: 1px solid var(--primaryColor);
+    border: 1px solid var(--mw-primary-color);
     padding: 5px;
     outline: 0 !important;
     border-color: #000 !important;
 }
 
 .header-menu-toggle-button {
-    color: var(--primaryColor)$mw-importance;
+    color: var(--mw-primary-color)$mw-importance;
 }
 
 .text-primary {
 
-    color: var(--primaryColor) !important;
+    color: var(--mw-primary-color) !important;
 }
 
 .text-dark {
@@ -629,7 +603,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
 
 
 .hover-bg-body:hover .bg-body {
-    background: var(--primaryColor) $mw-importance;
+    background: var(--mw-primary-color) $mw-importance;
     color: var(--btnTextColor)$mw-importance;
 
 }

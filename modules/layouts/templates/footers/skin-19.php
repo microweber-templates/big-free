@@ -36,7 +36,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     }
 </style>
 
-<div class="  footer-background py-0 <?php print $layout_classes; ?>">
+<div class="  footer-background py-0 <?php print $layout_classes; ?>" id="mw-footer-background">
 
     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
 
@@ -86,9 +86,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         </div>
     </div>
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
-</div>
 
-<div class="py-2 element background-color-element" style="background-color: #f5f5f5;">
     <div class="mw-layout-container no-element   container py-2" >
         <div class="col-12 d-md-flex text-center">
             <small class="col-sm-6 text-md-start text-center" field="footer-reserved-skin-19-<?php print $params['id'] ?>" rel="module">
@@ -97,3 +95,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         </div>
     </div>
 </div>
+
+
+
