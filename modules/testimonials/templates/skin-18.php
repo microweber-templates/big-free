@@ -157,19 +157,19 @@ description: Skin-16
 
 
 <div class="py-5 position-relative">
-    <img class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-1" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-1.png"/>
-    <img class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-2" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-2.png"/>
-    <img class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-3" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-3.png"/>
-    <img class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-4" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-4.png"/>
-    <img class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-5" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-5.png"/>
-    <img class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-6" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-6.png"/>
+    <img loading="lazy" class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-1" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-1.png"/>
+    <img loading="lazy" class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-2" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-2.png"/>
+    <img loading="lazy" class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-3" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-3.png"/>
+    <img loading="lazy" class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-4" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-4.png"/>
+    <img loading="lazy" class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-5" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-5.png"/>
+    <img loading="lazy" class="mw-testimonials-item-faces-image-for-change mw-testimonials-item-faces-image-for-change-6" src="<?php print template_url(); ?>assets/img/layouts/testimonials-image-for-change-6.png"/>
 
     <h2 class="edit safe-mode   col-md-10 text-center mx-auto mb-5" style="font-weight: 700;" field="testimonial-skin-16-title" rel="module">Trusted by Agencies <br> & Store Owners</h2>
 
     <div class="testimonials-faces-wrapper position-relative">
         <div class="slick-arrows-1 position-relative">
-            <img class="mw-testimonials-item-faces-img-group33" src="<?php print template_url(); ?>assets/img/layouts/testimonials-Group-33.png"/>
-            <img class="mw-testimonials-item-faces-img-group41" src="<?php print template_url(); ?>assets/img/layouts/testimonials-Group-41.png"/>
+            <img loading="lazy" class="mw-testimonials-item-faces-img-group33" src="<?php print template_url(); ?>assets/img/layouts/testimonials-Group-33.png"/>
+            <img loading="lazy" class="mw-testimonials-item-faces-img-group41" src="<?php print template_url(); ?>assets/img/layouts/testimonials-Group-41.png"/>
             <div class="testimonials-wrapper mx-auto">
                 <div class="mw-testimonials mw-testimonials-faces slickslider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": false, "arrows": true}'>
                     <?php foreach ($data as $item): ?>

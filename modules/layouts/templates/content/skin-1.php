@@ -40,16 +40,16 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
         <div class="row text-center mt-5">
             <div class=" col cloneable element mb-5">
-                <img class="rounded-3 h-100 w-100"  src="<?php print template_url(); ?>assets/img/layouts/gallery-1-1.jpg"/>
+                <img loading="lazy" class="rounded-3 h-100 w-100"  src="<?php print template_url(); ?>assets/img/layouts/gallery-1-1.jpg"/>
             </div>
             <div class=" col cloneable element mb-5">
-                <img class="rounded-3 h-100 w-100"  src="<?php print template_url(); ?>assets/img/layouts/gallery-1-6.jpg"/>
+                <img loading="lazy" class="rounded-3 h-100 w-100"  src="<?php print template_url(); ?>assets/img/layouts/gallery-1-6.jpg"/>
             </div>
             <div class=" col cloneable element mb-5">
-                <img class="rounded-3 h-100 w-100"  src="<?php print template_url(); ?>assets/img/layouts/gallery-1-3.jpg"/>
+                <img loading="lazy" class="rounded-3 h-100 w-100"  src="<?php print template_url(); ?>assets/img/layouts/gallery-1-3.jpg"/>
             </div>
             <div class=" col cloneable element mb-5">
-                <img class="rounded-3 h-100 w-100"  src="<?php print template_url(); ?>assets/img/layouts/gallery-1-4.jpg"/>
+                <img loading="lazy" class="rounded-3 h-100 w-100"  src="<?php print template_url(); ?>assets/img/layouts/gallery-1-4.jpg"/>
             </div>
         </div>
 

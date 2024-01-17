@@ -53,7 +53,7 @@ description: Skin-9
                     <a
                         data-index="<?php print $count; ?>"
                         href="<?php print thumbnail($item['filename'], 1080, 1080); ?>">
-                        <img class="w-100 h-100" src="<?php print thumbnail($item['filename'], 600, 600); ?>" alt=""/>
+                        <img loading="lazy" class="w-100 h-100" src="<?php print thumbnail($item['filename'], 600, 600); ?>" alt=""/>
                     </a>
                 </div>
             <?php endforeach; ?>

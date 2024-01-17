@@ -102,7 +102,7 @@ description: Skin-3
                         <?php endif; ?>
 
                         <div class="img-as-background   mh-350 mb-3">
-                            <img src="<?php print thumbnail($item['filename'], 350, 350, true); ?>"/>
+                            <img loading="lazy" src="<?php print thumbnail($item['filename'], 350, 350, true); ?>"/>
                         </div>
                     </div>
                 </div>

@@ -114,7 +114,7 @@ description: Skin-4
                                                 </div>
                                             <?php endif; ?>
                                         <?php endif; ?>
-                                        <img src="<?php print thumbnail($item['image'], 1250, 1250); ?>" />
+                                        <img loading="lazy" src="<?php print thumbnail($item['image'], 1250, 1250); ?>" />
                                     </div>
                                 </a>
                             <?php endif; ?>

@@ -32,7 +32,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="container-fluid mw-layout-container no-element   edit " field="layout-content-skin-3-<?php print $params['id'] ?>" rel="module">
         <div class="row">
             <div class="col-12 col-lg-6   text-center">
-                <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-4.jpg"/>
+                <img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-4.jpg"/>
             </div>
 
             <div class="col-12 col-lg-6 px-md-5 cloneable element background-color-element safe-mode  ">
