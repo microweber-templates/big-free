@@ -24,6 +24,22 @@ if (isset($json) == false or count($json) == 0) {
 }
 ?>
 
+<style>
+    .misc-skin-12 .tab-pane .element {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    @media (max-width: 550px) {
+        .misc-skin-12 .tab-pane .element {
+            flex-wrap: wrap;
+        }
+    }
+
+</style>
+
 <div class="row" id="mw-accordion-module-<?php print $params['id'] ?>">
     <div class="col-lg-2">
         <ul class="nav flex-column" id="accordion-<?php print $params['id']; ?>" role="tablist">
@@ -37,7 +53,7 @@ if (isset($json) == false or count($json) == 0) {
     </div>
 
     <div class="col-lg-10">
-        <div class="tab-content" id="accordion-<?php print $params['id']; ?>-content">
+        <div class="tab-content misc-skin-12" id="accordion-<?php print $params['id']; ?>-content">
             <?php foreach ($json as $key => $slide): ?>
 
                 <?php
@@ -49,9 +65,14 @@ if (isset($json) == false or count($json) == 0) {
                 ?>
 
 
-
                 <div class="tab-pane fade <?php if ($key == 0): ?>show active<?php endif; ?>" id="tab-<?php print $params['id'] . '-' . $key; ?>" role="tabpanel" aria-labelledby="<?php print $params['id'] . '-' . $key; ?>-tab">
+                    <h4>
+                        <?php print isset($slide['title']) ? $slide['title'] : ''; ?>
+                    </h4>
+
+
                     <?php include modules_path() . 'accordion/templates/partials/render_accordion_item_content.php'; ?>
+
 
                 </div>
             <?php endforeach; ?>

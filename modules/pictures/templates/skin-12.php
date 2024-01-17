@@ -39,17 +39,17 @@ description: Skin-12
                     <?php if ($count == 0 || $count == 5): ?>
                         <div class="col-holder col-8">
                             <div class="item pictures picture-<?php print $item['id']; ?>" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;">
-                                <img class="w-100" src="<?php print thumbnail($item['filename'], 800, 800, true); ?>" alt="">
+                                <img loading="lazy" class="w-100" src="<?php print thumbnail($item['filename'], 800, 800, true); ?>" alt="">
                             </div>
                         </div>
                      <?php else : ?>
                      <?php  if ($count == 1 || $count == 3 ):  ?>  <div class="col-holder col-4"> <?php endif; ?>
 
                             <div class="item pictures picture-<?php print $item['id']; ?>" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;">
-                                <img class="w-100" src="<?php print thumbnail($item['filename'], 500, 500, true); ?>" alt="">
+                                <img loading="lazy" class="w-100" src="<?php print thumbnail($item['filename'], 500, 500, true); ?>" alt="">
                             </div>
 
-                             
+
                     <?php  if ($count == 2 || $count == 4):  ?> </div>  <?php endif; ?>
 
                     <?php endif; ?>

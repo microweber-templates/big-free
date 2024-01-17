@@ -56,7 +56,7 @@ if (is_array($data)): ?>
                     </div>
                 <?php endif; ?>
             <?php endif; ?>
-            <img src="<?php print thumbnail($data[0]['filename'], 1080, 1080); ?>" id="<?php print $pictureElementId; ?>" />
+            <img loading="lazy" src="<?php print thumbnail($data[0]['filename'], 1080, 1080); ?>" id="<?php print $pictureElementId; ?>" />
         </div>
     </div>
 

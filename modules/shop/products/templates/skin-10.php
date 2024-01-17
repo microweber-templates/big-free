@@ -113,7 +113,7 @@ if (!isset($tn[1])) {
                                     <?php endif; ?>
                                 <?php endif; ?>
 
-                                <img class="w-100" src="<?php print thumbnail($item['image'], 1350, 1350); ?>"/>
+                                <img loading="lazy" class="w-100" src="<?php print thumbnail($item['image'], 1350, 1350); ?>"/>
 
                             </a>
                         <?php endif; ?>

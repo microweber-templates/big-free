@@ -37,8 +37,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
             <div class="col-12 col-sm-10 col-lg-6   d-flex align-items-center justify-content-lg-end justify-content-center mt-2 mt-sm-0 mx-auto">
                 <div class="  d-flex safe-mode">
-                    <a href="#" class="ms-2 w-150"><img src="<?php print template_url(); ?>assets/img/layouts/content-39-1.jpg" class=" "></a>
-                    <a href="#" class="ms-2 w-150"><img src="<?php print template_url(); ?>assets/img/layouts/content-39-2.jpg" class=" "></a>
+                    <a href="#" class="ms-2 w-150"><img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/content-39-1.jpg" class=" "></a>
+                    <a href="#" class="ms-2 w-150"><img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/content-39-2.jpg" class=" "></a>
                 </div>
             </div>
         </div>

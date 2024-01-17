@@ -34,7 +34,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="row col-12">
             <div class="col-12 col-sm-10 col-lg-6 mx-auto cloneable element safe-mode">
                 <div class="pe-lg-5 text-lg-start pb-5  ">
-                    <img src="<?php print template_url(); ?>assets/img/layouts/coffee.jpg" class=" "/>
+                    loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/coffee.jpg" class=" "/>
                 </div>
             </div>
 

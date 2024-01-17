@@ -4,7 +4,7 @@
 
 type: layout
 
-name: Contacts 17
+name: Contacts 17 - Parallax
 
 position: 17
 

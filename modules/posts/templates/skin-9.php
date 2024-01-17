@@ -30,19 +30,19 @@ description: Posts 9
 
                     <a href="<?php print $item['link'] ?>" class="d-block position-relative">
                         <div class="img-as-background square-75">
-                            <img src="<?php print thumbnail($item['image'], 1200, 1200); ?>"/>
+                            <img loading="lazy" style="object-fit: cover;" src="<?php print thumbnail($item['image'], 1200, 1200); ?>"/>
                         </div>
                     </a>
                     <?php endif; ?>
 
-                    <div class="d-flex flex-column h-100 pt-3 pb-2">
+                    <div class="d-flex flex-column h-100 pt-3 p-4">
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
                         <small class="mb-3 mt-3 d-block  "><?php echo date_system_format($item['created_at']) ; ?></small>
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                            <a href="<?php print $item['link'] ?>" class="text-dark text-decoration-none"><h4 class="mb-2"><?php print $item['title'] ?></h4></a>
+                            <a href="<?php print $item['link'] ?>" class="text-dark text-decoration-none"><h5 class="mb-2"><?php print $item['title'] ?></h5></a>
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>

@@ -53,7 +53,7 @@ description: Posts 13
 
                     <a href="<?php print $item['link'] ?>" class="d-block position-relative">
                         <div class="img-as-background square-75">
-                            <img src="<?php print thumbnail($item['image'], 1200, 1200); ?>" />
+                            <img loading="lazy" src="<?php print thumbnail($item['image'], 1200, 1200); ?>" />
                         </div>
                     </a>
                     <?php endif; ?>

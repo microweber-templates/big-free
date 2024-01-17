@@ -42,7 +42,7 @@
 
                                 <div class="w-40 mx-auto">
                                             <div class="img-as-background rounded-circle square">
-                                                <img src="<?php echo thumbnail($user['thumbnail'], 1200, 1200); ?>" />
+                                                <img loading="lazy" src="<?php echo thumbnail($user['thumbnail'], 1200, 1200); ?>" />
                                             </div>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
                                     <div class="me-3">
                                         <div class="w-40">
                                             <div class="img-as-background rounded-circle square">
-                                                <img src="<?php echo thumbnail($user['thumbnail'], 80, 80); ?>"/>
+                                                <img loading="lazy" src="<?php echo thumbnail($user['thumbnail'], 80, 80); ?>"/>
                                             </div>
                                         </div>
                                     </div>

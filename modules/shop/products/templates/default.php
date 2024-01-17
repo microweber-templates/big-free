@@ -101,7 +101,7 @@ if (!isset($tn[1])) {
                                             </div>
                                         <?php endif; ?>
                                     <?php endif; ?>
-                                    <img src="<?php print thumbnail($item['image'], 850, 850); ?>" />
+                                    <img loading="lazy" style="object-fit: cover;" src="<?php print thumbnail($item['image'], 850, 850); ?>" />
                                 </div>
                             </a>
                         <?php endif; ?>

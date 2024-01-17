@@ -84,20 +84,19 @@ description: Skin-20
                    <div class="col-lg-6 col-11 pe-3 position-relative">
                        <?php if ($item['client_picture']): ?>
                            <div class="img-as-background h-500">
-                               <img src="<?php print thumbnail($item['client_picture'], 800); ?>" class="position-relative"/>
+                               <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 800); ?>" class="position-relative"/>
 
                            </div>
-                           <img src="<?php print template_url(); ?>assets/img/layouts/action/action-blog-quote.png" class="position-absolute action-blog-quote"/>
+                           <img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/action/action-blog-quote.png" class="position-absolute action-blog-quote"/>
 
                        <?php endif; ?>
                    </div>
 
                     <div class="col-lg-4 col-12 mx-auto ps-3 mt-lg-0 mt-5">
-                        <h4>Save Time Managing <br> Social Media For Business</h4>
 
                         <p class="py-3"><?php print character_limiter($item['content'], $limit); ?></p>
 
-                        <img src="<?php print template_url(); ?>assets/img/layouts/action/action-blog-stars.png" class="mb-4"/>
+                        <img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/action/action-blog-stars.png" class="mb-4"/>
 
 
 

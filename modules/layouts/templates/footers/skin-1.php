@@ -67,12 +67,20 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
 
-    <div class="mw-layout-container no-element   container py-2" >
-        <div class="col-12 d-md-flex text-center">
-            <small class="col-sm-6 text-md-start text-center edit element safe-element" field="footer-reserved-skin-1-<?php print $params['id'] ?>" rel="module">
-
-                © All Rights Reserved.</small>
-            <small class="col-sm-6 mb-0 noedit text-md-end text-center"><?php print powered_by_link(); ?></small>
+    <div class="mw-layout-container no-element   container-fluid py-2" >
+        <div class="row">
+            <div class="col-12 d-md-flex text-center">
+                <div class="col-sm-6 text-md-start text-center edit safe-mode" field="footer-reserved-skin-1-<?php print $params['id'] ?>" rel="module">
+                    <small>
+                        © All Rights Reserved.
+                    </small>
+                </div>
+                <div class="col-sm-6 mb-0 noedit text-md-end text-center">
+                    <small>
+                        <?php print powered_by_link(); ?>
+                    </small>
+                </div>
+            </div>
         </div>
     </div>
 
