@@ -31,7 +31,7 @@ description: Posts 7
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
 
                         <div class="img-as-background square-75">
-                            <img src="<?php print thumbnail($item['image'], 1200, 1200); ?>" />
+                            <img loading="lazy" src="<?php print thumbnail($item['image'], 1200, 1200); ?>" />
                         </div>
                         <?php endif; ?>
 

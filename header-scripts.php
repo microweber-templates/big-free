@@ -6,7 +6,8 @@
 
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta property="og:title" content="{content_meta_title}"/>
     <meta name="keywords" content="{content_meta_keywords}"/>
@@ -49,7 +50,10 @@
 
     <link href="<?php print template_url(); ?>assets/templates_features/css/scss/styles-for-template.css" rel="stylesheet"/>
     <link href="<?php print template_url(); ?>assets/design-styles/design-styles.css" rel="stylesheet"/>
-    <script src="<?php print template_url(); ?>assets/templates_features/js/js-for-template.js"></script>
+
+
+
+    <script src="<?php print template_url(); ?>assets/templates_features/js/js-for-template.js" defer></script>
 
     <?php print get_template_stylesheet(); ?>
 

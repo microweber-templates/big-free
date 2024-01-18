@@ -86,7 +86,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
             <div class="col-12 col-sm-10 col-lg-6 mx-auto feature-1-img-block">
                 <div class="  h-100 img-as-background">
-                    <img class="w-100 h-100" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-1.jpg"/>
+                    <img loading="lazy" class="w-100 h-100" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-1.jpg"/>
                 </div>
             </div>
         </div>
