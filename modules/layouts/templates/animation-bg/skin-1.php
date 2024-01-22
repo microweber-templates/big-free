@@ -32,7 +32,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
         <div class="container mh-100vh d-flex align-items-center justify-content-center">
 
-            <div class="mw-layout-container no-element   row text-center allow-select safe-mode edit " field="layout-animation-bg-skin-1-<?php print $params['id'] ?>" rel="module">
+            <div class="mw-layout-container no-element   row text-center allow-select   edit " field="layout-animation-bg-skin-1-<?php print $params['id'] ?>" rel="module">
 
                     <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="header-section-title mb-3">Describe your company </h1>
                     <p data-mwplaceholder="<?php _e('Enter text here'); ?>" class="header-section-p" >Describe your company and services with few words and explain why you are the best choice.</p>

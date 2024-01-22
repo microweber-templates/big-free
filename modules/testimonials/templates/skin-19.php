@@ -112,7 +112,7 @@ description: Skin-19
                            </div>
 
 
-                           <img class="mw-ziza-testimonials-item-dots" src="<?php print template_url(); ?>assets/img/layouts/ziza/ziza-dots-94.png"/>
+                           <img loading="lazy" class="mw-ziza-testimonials-item-dots" src="<?php print template_url(); ?>assets/img/layouts/ziza/ziza-dots-94.png"/>
                        </div>
                     </div>
                 <?php endif; ?>

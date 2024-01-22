@@ -41,7 +41,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
                     <div class="col-12  safe-mode  col-md-6 no-typing   allow-select">
                         <div class="img-as-background no-typing" style="min-height: 100vh;">
-                            <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-6.jpg" alt="">
+                            <img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-6.jpg" alt="">
                         </div>
                     </div>
                 </div>
