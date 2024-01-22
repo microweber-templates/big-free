@@ -53,7 +53,7 @@ description: Skin-1
             <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="d-block position-relative show-on-hover-root">
                     <div class="img-as-background   mh-400 mb-3">
-                        <img alt="<?php print $itemAltText; ?>" src="<?php print thumbnail($item['filename'], 1080, 1080, true); ?>"/>
+                        <img loading="lazy" alt="<?php print $itemAltText; ?>" src="<?php print thumbnail($item['filename'], 1080, 1080, true); ?>"/>
                     </div>
 
                     <?php if ($itemTitle || $itemDescription || $itemLink): ?>

@@ -46,7 +46,7 @@ description: Skin-2
             <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div class="d-block position-relative show-on-hover-root">
                     <div class="img-as-background   mh-350 mb-3">
-                        <img src="<?php print thumbnail($item['filename'], 350, 350, true); ?>"/>
+                        <img loading="lazy" src="<?php print thumbnail($item['filename'], 350, 350, true); ?>"/>
                     </div>
 
                     <?php if ($itemTitle || $itemDescription): ?>

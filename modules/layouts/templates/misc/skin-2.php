@@ -34,8 +34,8 @@ if (page_title()) {
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element   container    edit safe-mode    " field="layout-misc-skin-2-<?php print $params['id'] ?>" rel="module">
-        <div class="row safe-mode">
+    <div class="mw-layout-container no-element   container    edit      " field="layout-misc-skin-2-<?php print $params['id'] ?>" rel="module">
+        <div class="row  ">
             <div class="col-12">
                 <module type="accordion" template="skin-1" />
             </div>

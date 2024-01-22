@@ -37,7 +37,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
             <div class="col-12  safe-mode  col-sm-10 col-md-8 col-lg-5 py-4">
                 <div class="ps-0 ps-lg-5">
-                    <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-9.jpg"/>
+                    <img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-9.jpg"/>
                 </div>
             </div>
         </div>

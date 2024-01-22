@@ -24,7 +24,7 @@ if (is_array($data)): ?>
 
             <div class="shop-inner-big-image position-relative ps-lg-0">
 
-                <img src="<?php print thumbnail($data[0]['filename'], 1080, 1080); ?>" id="<?php print $pictureElementId; ?>" />
+                <img loading="lazy" src="<?php print thumbnail($data[0]['filename'], 1080, 1080); ?>" id="<?php print $pictureElementId; ?>" />
             </div>
 
             <?php if (sizeof($data) > 1) { ?>

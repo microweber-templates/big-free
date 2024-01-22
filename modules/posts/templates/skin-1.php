@@ -34,7 +34,7 @@ description: Posts Slider 1
 
                         <a href="<?php print $item['link'] ?>">
                             <div class="img-as-background h-350">
-                                <img src="<?php print thumbnail($item['image'], 1350, 1300); ?>" style="position: relative !important;"/>
+                                <img loading="lazy" src="<?php print thumbnail($item['image'], 1350, 1300); ?>" style="position: relative !important;"/>
                             </div>
                         </a>
                         <?php endif; ?>

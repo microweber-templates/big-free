@@ -62,7 +62,7 @@ description: Posts 18
                     <div class="col-lg-4 col-12 justify-content-end ms-auto order-lg-2 order-1">
                         <a href="<?php print $item['link'] ?>" class="   d-block">
                             <div class="img-as-background">
-                                <img src="<?php print thumbnail($item['image'], 1250, 1250); ?>"  style="position: relative !important;"/>
+                                <img loading="lazy" src="<?php print thumbnail($item['image'], 1250, 1250); ?>"  style="position: relative !important;"/>
                             </div>
                         </a>
                     </div>
