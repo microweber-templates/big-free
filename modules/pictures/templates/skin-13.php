@@ -83,7 +83,7 @@ description: Skin-13
             foreach ($data as $item): ?>
                 <?php $count++; ?>
                 <div class="slide item pictures picture-<?php print $item['id']; ?>">
-                    <img src="<?php print thumbnail($item['filename'], 880, 550, true); ?>" alt="">
+                    <img loading="lazy" src="<?php print thumbnail($item['filename'], 880, 550, true); ?>" alt="">
                 </div>
             <?php endforeach; ?>
         </div>

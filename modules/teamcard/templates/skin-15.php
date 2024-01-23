@@ -30,9 +30,9 @@ description: Skin-15
         <div class="col-xl-3 col-md-6 col-sm-8 col-12 mx-auto d-flex justify-content-center align-items-center py-4">
             <div class="flower-card card w-100" style="border-radius: 0 20px 0 20px;">
                 <?php if ($slide['file']) { ?>
-                    <img class="flower-team-card-img card-img-top" src="<?php print thumbnail($slide['file'], 800); ?>"/>
+                    <img loading="lazy" class="flower-team-card-img card-img-top" src="<?php print thumbnail($slide['file'], 800); ?>"/>
                 <?php } else { ?>
-                    <img class="flower-team-card-img card-img-top" src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
+                    <img loading="lazy" class="flower-team-card-img card-img-top" src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
                 <?php } ?>
 
 
