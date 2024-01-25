@@ -29,11 +29,11 @@ description: Skin-1
 
                    <?php if ($slide['file']) { ?>
                     <div class="img-as-background square">
-                        <img src="<?php print thumbnail($slide['file'], 850); ?>"/>
+                        <img loading="lazy" src="<?php print thumbnail($slide['file'], 850); ?>"/>
                     </div>
                     <?php } else { ?>
                         <div class="img-as-background square">
-                            <img src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
+                            <img loading="lazy" src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
                         </div>
                     <?php } ?>
                 </div>
@@ -60,7 +60,7 @@ description: Skin-1
                 <?php foreach ($data as $key => $slide): ?>
                     <div class="w-80 m-4 cursor-pointer js-show-team-member" data-id="<?php echo $key; ?>">
                         <div class="img-as-background rounded-circle square">
-                            <img src="<?php print thumbnail($slide['file'], 80); ?>"/>
+                            <img loading="lazy" src="<?php print thumbnail($slide['file'], 80); ?>"/>
                         </div>
                     </div>
                 <?php endforeach; ?>

@@ -54,7 +54,7 @@ description: Skin-8
                         data-index="<?php print $count; ?>"
                         href="<?php print thumbnail($item['filename'], 1080, 1080); ?>">
                         <div class="img-as-background   mh-400">
-                            <img src="<?php print thumbnail($item['filename'], 1080, 1080, true); ?>"/>
+                            <img loading="lazy" src="<?php print thumbnail($item['filename'], 1080, 1080, true); ?>"/>
                         </div>
                     </a>
 

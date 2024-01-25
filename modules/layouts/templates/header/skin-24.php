@@ -3,7 +3,7 @@
 
 type: layout
 
-name: Header 24
+name: Header 24 - Parallax
 
 position: 24
 
