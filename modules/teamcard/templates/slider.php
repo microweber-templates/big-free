@@ -45,11 +45,11 @@ description slider
                         <div class="w-450">
                             <?php if ($teamData['file']) { ?>
                                 <div class="img-as-background square">
-                                    <img style="object-fit: contain !important;" src="<?php print thumbnail($teamData['file'], 850); ?>"/>
+                                    <img loading="lazy" style="object-fit: contain !important;" src="<?php print thumbnail($teamData['file'], 850); ?>"/>
                                 </div>
                             <?php } else { ?>
                                 <div class="img-as-background square">
-                                    <img style="object-fit: contain !important;" src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
+                                    <img loading="lazy" style="object-fit: contain !important;" src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
                                 </div>
                             <?php } ?>
                         </div>

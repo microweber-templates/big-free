@@ -36,11 +36,11 @@ if (page_title()) {
     <div class="mw-layout-container no-element   container safe-mode edit" field="layout-grids-skin-1-<?php print $params['id'] ?>" rel="module">
         <div class="row safe-mode">
             <div class="col-12 col-sm-8 safe-mode img-as-background" style="min-height: 350px;">
-                <img class="me-sm-3" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-5.jpg">
+                <img loading="lazy" class="me-sm-3" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-5.jpg">
             </div>
 
             <div class="col-12 col-sm-4 safe-mode img-as-background" style="min-height: 350px;">
-                <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-7.jpg">
+                <img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-7.jpg">
             </div>
         </div>
     </div>

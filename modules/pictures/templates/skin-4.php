@@ -51,32 +51,35 @@ description: Skin-4
 <?php if (is_array($data)): ?>
     <?php $rand = uniqid(); ?>
 
+    <?php
+    $click_image_event = 'fullscreen';
+    $get_click_image_event = get_option('click_image_event', $params['id']);
+    if ($get_click_image_event != false) {
+        $click_image_event = $get_click_image_event;
+    }
+    ?>
+
     <div class="slick-arrows-1">
         <div class="slick-gallery">
             <?php foreach ($data as $item): ?>
                 <?php
+                $itemTitle = false;
+                $itemDescription = false;
+                $itemLink = false;
+                $itemAltText = 'Open';
                 if (isset($item['image_options']) and is_array($item['image_options'])) {
                     if (isset($item['image_options']['title'])) {
                         $itemTitle = $item['image_options']['title'];
-                    } else {
-                        $itemTitle = false;
                     }
-
                     if (isset($item['image_options']['caption'])) {
                         $itemDescription = $item['image_options']['caption'];
-                    } else {
-                        $itemDescription = false;
                     }
-
                     if (isset($item['image_options']['link'])) {
                         $itemLink = $item['image_options']['link'];
-                    } else {
-                        $itemLink = false;
                     }
-                } else {
-                    $itemTitle = false;
-                    $itemDescription = false;
-                    $itemLink = false;
+                    if (isset($item['image_options']['alt-text'])) {
+                        $itemAltText = $item['image_options']['alt-text'];
+                    }
                 }
                 ?>
                 <div class="px-3 text-center d-flex align-items-center justify-content-center slick-slide-item-x">
