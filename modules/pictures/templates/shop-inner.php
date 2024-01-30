@@ -19,7 +19,7 @@ description: Shop inner
                 <div class="elevatezoom-holder">
                     <?php foreach ($data as $key => $item): ?>
                         <?php if ($key == 0): ?>
-                            <img id="elevatezoom" class="main-image" src="<?php print thumbnail($item['filename'], 800, 800); ?>" data-zoom-image="<?php print thumbnail($item['filename'], 1920, 1920); ?>"/>
+                            <img loading="lazy" id="elevatezoom" class="main-image" src="<?php print thumbnail($item['filename'], 800, 800); ?>" data-zoom-image="<?php print thumbnail($item['filename'], 1920, 1920); ?>"/>
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </div>

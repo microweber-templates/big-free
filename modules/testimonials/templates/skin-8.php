@@ -89,7 +89,7 @@ description: Skin-8
                                 <div class="me-3">
                                     <div class="w-40 mx-auto">
                                         <div class="img-as-background rounded-circle square">
-                                            <img src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
+                                            <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
                                         </div>
                                     </div>
                                 </div>

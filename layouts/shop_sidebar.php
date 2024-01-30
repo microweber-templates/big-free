@@ -1,4 +1,4 @@
-<div class="edit  " field="new-world_shop_sidebar" rel="inherit">
+ <div class="edit" rel="inherit" field="shop-sidebar">
     <module type="spacer" id="spacer-layout-shop-sidebar-top" />
 
     <div class="sidebar">
@@ -27,6 +27,6 @@
     </div>
     <module type="spacer" id="spacer-layout-shop-sidebar-bottom" />
 
-</div>
 
+ </div>
 

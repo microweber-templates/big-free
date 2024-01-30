@@ -106,7 +106,7 @@ description: Skin-5
                                                 </div>
                                             <?php endif; ?>
                                         <?php endif; ?>
-                                        <img src="<?php print thumbnail($item['image'], 850, 850); ?>" />
+                                        <img loading="lazy" src="<?php print thumbnail($item['image'], 850, 850); ?>" />
 
                                     </div>
                                 </a>

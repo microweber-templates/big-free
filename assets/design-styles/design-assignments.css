@@ -164,6 +164,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-background, .mw-vhmbgr-active-popup {
   background-color: var(--mw-header-background-color) !important; }
+  .header-background .dropdown-menu, .mw-vhmbgr-active-popup .dropdown-menu {
+    background-color: var(--mw-header-background-color) !important;
+    border-color: var(--mw-header-background-color) !important;
+    border-radius: 0 !important; }
   .header-background a, .header-background .mw-vhmbgr-wrapper, .mw-vhmbgr-active-popup a, .mw-vhmbgr-active-popup .mw-vhmbgr-wrapper {
     color: var(--mw-header-link-color) !important; }
     .header-background a:hover, .header-background .mw-vhmbgr-wrapper:hover, .mw-vhmbgr-active-popup a:hover, .mw-vhmbgr-active-popup .mw-vhmbgr-wrapper:hover {
@@ -226,5 +230,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px 15px !important;
   border-radius: 0 !important;
   border: none !important; }
+
+.hover-primary:hover {
+  background-color: var(--mw-link-color); }
+  .hover-primary:hover * {
+    color: var(--mw-text-on-dark-background-color); }
 
 /*# sourceMappingURL=design-assignments.css.map */

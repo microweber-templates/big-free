@@ -38,7 +38,7 @@ description: Skin-2
 
                     <div class="img-as-background mx-auto mt-3 rounded-circle" style="width:125px; height: 125px;">
                         <?php if ($item['client_picture']): ?>
-                            <img src="<?php print thumbnail($item['client_picture'], 750); ?>" class="d-inline"/>
+                            <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 750); ?>" class="d-inline"/>
                         <?php endif; ?>
                     </div>
 
