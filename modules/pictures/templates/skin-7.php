@@ -73,7 +73,7 @@ if (is_array($data)): ?>
                 <a
                     data-index="<?php print $count; ?>"
                     href="<?php print thumbnail($item['filename'], 1080, 1080); ?>">
-                    <img src="<?php print thumbnail($item['filename'], 600, 600); ?>" alt=""/>
+                    <img loading="lazy" src="<?php print thumbnail($item['filename'], 600, 600); ?>" alt=""/>
                 </a>
             <?php endforeach; ?>
         <?php } ?>

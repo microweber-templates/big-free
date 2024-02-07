@@ -49,7 +49,7 @@ description: Skin-13
                     <?php if ($item['client_picture']): ?>
                         <div class="w-250 mx-auto mb-4">
                             <div class="img-as-background rounded-circle square">
-                                <img src="<?php print thumbnail($item['client_picture'], 250); ?>">
+                                <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 250); ?>">
                             </div>
                         </div>
                     <?php endif; ?>

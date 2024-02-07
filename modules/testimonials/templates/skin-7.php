@@ -81,7 +81,7 @@ description: Skin-7
                                 <div class="me-3">
                                     <div class="w-40 mx-auto">
                                         <div class="img-as-background rounded-circle square">
-                                            <img src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
+                                            <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
                                         </div>
                                     </div>
                                 </div>
@@ -92,8 +92,6 @@ description: Skin-7
                                 <small class="mb-0 text-dark"><?php print $item['client_role']; ?></small>
                             </div>
                         </div>
-
-                        <module type="social_links" template="skin-1"/>
                     </div>
                 </div>
                 <p><?php print character_limiter($item['content'], $limit); ?></p>

@@ -35,13 +35,15 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
       <div class="row">
           <div class="col-12 col-lg-10 col-lg-8 mx-auto  ">
               <div class="mb-4 icon-size-64px no-element">
-                  <i class="safe-element mw-micon-Anchor mb-4 icon-size-64px"></i>
+                  <i class="safe-element no-typing mw-micon-Anchor mb-4 icon-size-64px"></i>
               </div>
+              <div class="regular-mode">
               <h3 data-mwplaceholder="<?php _e('Enter title here'); ?>">Your Story Should Evolve Over Time</h3>
               <p data-mwplaceholder="<?php _e('Enter title here'); ?>" class="mb-3">Update your audience on new developments and how
                   <br>
                   you're overcoming challenges.
               </p>
+              </div>
           </div>
       </div>
     </div>

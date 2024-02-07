@@ -57,7 +57,7 @@ $prev = prev_content($content['id']);
                                             <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg>                                            </a>
                                         <div id="prev-tip" style="display: none">
                                             <div class="next-previous-tip-content text-center">
-                                                <img src="<?php print get_picture($prev['id']); ?>" alt="" width="90"/>
+                                                <img loading="lazy" src="<?php print get_picture($prev['id']); ?>" alt="" width="90" />
                                                 <h6><?php print $prev['title']; ?></h6>
                                             </div>
                                         </div>
@@ -69,7 +69,7 @@ $prev = prev_content($content['id']);
 
                                         <div id="next-tip" style="display: none">
                                             <div class="next-previous-tip-content text-center">
-                                                <img src="<?php print get_picture($next['id']); ?>" alt="" width="90"/>
+                                                <img loading="lazy" src="<?php print get_picture($next['id']); ?>" alt="" width="90"/>
 
                                                 <h6><?php print $next['title']; ?></h6>
                                             </div>

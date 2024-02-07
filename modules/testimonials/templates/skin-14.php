@@ -53,7 +53,7 @@ description: Skin-11
                                 <?php if ($item['client_picture']): ?>
                                     <div class="mw-300 w-300 avatar-holder mx-auto me-md-5">
                                         <div class="img-as-background   h-300">
-                                            <img src="<?php print thumbnail($item['client_picture'], 300); ?>" class="d-block"/>
+                                            <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 300); ?>" class="d-block"/>
                                         </div>
                                     </div>
                                 <?php endif; ?>
@@ -79,9 +79,7 @@ description: Skin-11
                                             <?php endif; ?>
 
                                         </div>
-                                        <div class="col-auto text-end text-right">
-                                            <module type="social_links" template="skin-4"/>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
