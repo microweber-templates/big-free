@@ -267,6 +267,12 @@ h6 {
 
     background-color: var(--mw-header-background-color) !important;
 
+    .dropdown-menu {
+        background-color: var(--mw-header-background-color) !important;
+        border-color: var(--mw-header-background-color) !important;
+        border-radius: 0 !important;
+    }
+
     a, .mw-vhmbgr-wrapper {
         color: var(--mw-header-link-color) !important;
 
@@ -392,3 +398,13 @@ h6 {
     border: none !important;
 }
 
+.hover-primary {
+
+    &:hover {
+        background-color: var(--mw-link-color);
+
+        * {
+            color: var(--mw-text-on-dark-background-color) !important;
+        }
+    }
+}

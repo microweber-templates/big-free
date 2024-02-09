@@ -44,7 +44,7 @@ description: Skin-10
                     <?php if ($item['client_picture']): ?>
                         <div class="w-125 mx-auto my-4">
                             <div class="img-as-background rounded-circle square">
-                                 <img src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
+                                 <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
                             </div>
                         </div>
                     <?php endif; ?>
