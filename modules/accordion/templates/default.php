@@ -88,7 +88,7 @@ if (isset($json) == false or count($json) == 0) {
             <div class="mw-accordion-faq-skin-card card mb-3 <?php if ($key == 0) : ?> active <?php endif; ?>">
                 <div class="mw-accordion-faq-skin-header card-header p-0" id="header-item-<?php print $edit_field_key ?>">
                     <button class="mw-accordion-faq-skin-button" data-bs-toggle="collapse" data-bs-target="#collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" aria-expanded="false" aria-controls="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>">
-                        <h5 class="ps-2 mb-0"> <?php print isset($slide['title']) ? $slide['title'] : ''; ?> </h5>
+                        <h5 class="ps-2 mb-0"> <?php print isset($slide['icon']) ? $slide['icon'] . ' ' : ''; ?> <?php print isset($slide['title']) ? $slide['title'] : ''; ?> </h5>
                         <i class="mdi mdi-plus active" style="font-size: 24px;"></i>
                     </button>
                 </div>

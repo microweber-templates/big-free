@@ -34,8 +34,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <section class="section <?php print $layout_classes; ?> ">
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
 
-    <div class="mw-layout-container no-element   container edit   no-typing no-select" field="layout-contacts-skin-1-<?php print $params['id'] ?>" rel="module">
-        <div class="row col-12 col-lg-4 col-md-6 ms-auto p-3 cloneable element background-color-element safe-mode allow-select" style="background-color: #fff;">
+    <div class="mw-layout-container no-element container edit no-select safe-mode" field="layout-contacts-skin-1-<?php print $params['id'] ?>" rel="module">
+        <div class="row col-12 col-lg-4 col-md-6 ms-auto p-3 cloneable element background-color-element allow-select regular-mode" style="background-color: #fff;">
             <h3 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="mb-4">Contact Us</h3>
             <p data-mwplaceholder="<?php _e('Enter text here'); ?>">We’re here to help and answer any question you might have. </p>
              <module type="contact_form" template="skin-3"/>

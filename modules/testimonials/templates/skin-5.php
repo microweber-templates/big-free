@@ -50,7 +50,7 @@ description: Skin-5
                                 <div class="me-sm-4 mb-5 mb-sm-0 mx-auto mx-sm-0">
                                     <div class="w-80 mx-auto">
                                         <div class="img-as-background rounded-circle square">
-                                            <img src="<?php print thumbnail($item['client_picture'], 120); ?>">
+                                            <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 120); ?>">
                                         </div>
                                     </div>
                                 </div>
