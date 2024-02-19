@@ -13,7 +13,35 @@ description: Navigation bar skin 1
 ?>
 
 
+<script>
+    $( document ).ready(function() {
+        jQuery('#<?php print $params['id'] ?> > ul > li > a').on('click', function (e) {
+            e.preventDefault();
+            jQuery(this).next().stop().slideToggle();
+        });
+    });
+</script>
 
+<style>
+    #<?php print $params['id'] ?> > ul > li > a:after {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>');
+        position: absolute;
+        right: 25px;
+        content: '';
+        z-index: 1;
+        width: 20px;
+        height: 20px;
+    }
+
+    #<?php print $params['id'] ?> > ul > li > a {
+        position: relative;
+    }
+
+    #<?php print $params['id'] ?> > ul > li:not(:first-child) ul {
+        display: none;
+    }
+
+</style>
 
 <?php
 $menu_filter['ul_class'] = '';

@@ -1,6 +1,12 @@
 <?php
 
 return [
+    'sticky_nav' => [
+        'type' => 'toggle',
+        'name'=> 'sticky_navigation',
+        'label' => 'Sticky nav',
+        'default' => get_option('sticky_navigation', $params['id']),
+    ],
     'header_top_menu' => [
         'type' => 'toggle',
         'label' => 'Show header top menu',
@@ -56,13 +62,7 @@ return [
         'show_when'=>['header_top_menu'],
         'default' => get_option('profile_link', $params['id']),
     ],
-    'sticky_nav' => [
-        'type' => 'toggle',
-        'name'=> 'sticky_nav',
-        'label' => 'Sticky nav',
-        'show_when'=> ['header_top_menu'],
-        'default' => get_option('sticky_nav', $params['id']),
-    ],
+
     'multilanguage' => [
         'type' => 'toggle',
         'name'=> 'multilanguage',

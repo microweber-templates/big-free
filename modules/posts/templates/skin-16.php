@@ -62,7 +62,7 @@ description: Posts 16
 
                         <div class="img-as-background h-350">
                             <a class="merry-on-hover-button" href=""><i class="mw-micon-Google-Play"></i></a>
-                            <img src="<?php print thumbnail($item['image'], 1200, 1200); ?>"  style="position: relative !important;"/>
+                            <img loading="lazy" src="<?php print thumbnail($item['image'], 1200, 1200); ?>"  style="position: relative !important;"/>
                         </div>
                         <?php endif; ?>
 

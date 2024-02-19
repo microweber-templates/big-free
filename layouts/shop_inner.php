@@ -1,7 +1,8 @@
 <?php include template_dir() . "header.php"; ?>
 
 <?php
-$content_data = content_data(CONTENT_ID);
+$contentId = content_id();
+$content_data = content_data($contentId);
 $in_stock = true;
 if (isset($content_data['qty']) and $content_data['qty'] != 'nolimit' and intval($content_data['qty']) == 0) {
     $in_stock = false;
@@ -15,9 +16,9 @@ if (isset($content_data['qty']) and $content_data['qty'] == 'nolimit') {
     $available_qty = 0;
 }
 
-$item = get_content_by_id(CONTENT_ID);
-$itemData = content_data($content['id']);
-$itemTags = content_tags($content['id']);
+$item = get_content_by_id($contentId);
+$itemData = content_data($contentId);
+$itemTags = content_tags($contentId);
 
 if (!isset($itemData['label'])) {
     $itemData['label'] = '';
@@ -26,13 +27,13 @@ if (!isset($itemData['label-color'])) {
     $itemData['label-color'] = '';
 }
 
-$next = next_content($content['id']);
-$prev = prev_content($content['id']);
+$next = next_content($contentId);
+$prev = prev_content($contentId);
 
 
 ?>
 
-<div class="shop-inner-page shop-products" id="shop-content-<?php print CONTENT_ID; ?>" field="shop-inner-page" rel="page">
+<div class="shop-inner-page shop-products" id="shop-content-<?php print $contentId; ?>" field="shop-inner-page" rel="page">
 
     <div class="container-fluid mw-m-t-30">
         <div class="row justify-content-center">
@@ -57,7 +58,7 @@ $prev = prev_content($content['id']);
                                             <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg>                                            </a>
                                         <div id="prev-tip" style="display: none">
                                             <div class="next-previous-tip-content text-center">
-                                                <img src="<?php print get_picture($prev['id']); ?>" alt="" width="90"/>
+                                                <img loading="lazy" src="<?php print get_picture($prev['id']); ?>" alt="" width="90" />
                                                 <h6><?php print $prev['title']; ?></h6>
                                             </div>
                                         </div>
@@ -69,7 +70,7 @@ $prev = prev_content($content['id']);
 
                                         <div id="next-tip" style="display: none">
                                             <div class="next-previous-tip-content text-center">
-                                                <img src="<?php print get_picture($next['id']); ?>" alt="" width="90"/>
+                                                <img loading="lazy" src="<?php print get_picture($next['id']); ?>" alt="" width="90"/>
 
                                                 <h6><?php print $next['title']; ?></h6>
                                             </div>
@@ -153,7 +154,7 @@ $prev = prev_content($content['id']);
                             </div>
 
                             <div class="bold">
-                                <module type="shop/cart_add"/>
+                                <module type="shop/cart_add" template="shop_inner"/>
                             </div>
                         </div>
                     </div>

@@ -31,7 +31,7 @@ description: Posts 12
 
                             <a href="<?php print $item['link'] ?>" class="   d-block position-relative overflow-hidden h-350 ">
 
-                                <img alt="post-img" src="<?php print thumbnail($item['image'], 1250, 1250); ?>" style="min-height: 100%;"/>
+                                <img loading="lazy" alt="post-img" src="<?php print thumbnail($item['image'], 1250, 1250); ?>" style="min-height: 100%;"/>
 
                             </a>
                             <?php endif; ?>
