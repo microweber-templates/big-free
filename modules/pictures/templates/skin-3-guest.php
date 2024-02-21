@@ -125,7 +125,7 @@ description: Skin-3-guest
             foreach ($data as $item): ?>
                 <?php $count++; ?>
                 <div class="slide item pictures picture-<?php print $item['id']; ?>">
-                    <img data-src="<?php print thumbnail($item['filename'], 880, 550, true); ?>" alt="">
+                    <img loading="lazy" data-src="<?php print thumbnail($item['filename'], 880, 550, true); ?>" alt="">
                 </div>
             <?php endforeach; ?>
         </div>

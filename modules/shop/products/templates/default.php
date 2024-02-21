@@ -93,15 +93,13 @@ if (!isset($tn[1])) {
                                         <?php endif; ?>
                                         <?php if (isset($itemData['label-type']) && $itemData['label-type'] === 'percent' && $percentChange > 0): ?>
 
-                                            <div class="discount-label">
-                                                <span class="discount-percentage">
-                                                        <?php echo $percentChange; ?>%
-                                                </span>
-                                                <span class="discount-label-text"><?php _lang("Discount"); ?></span>
-                                            </div>
+
+                                        <span class="badge" style="position: absolute; top:0; left: 0; z-index: 1; background-color: red;"> <?php echo $percentChange; ?>%</span>
+
+
                                         <?php endif; ?>
                                     <?php endif; ?>
-                                    <img src="<?php print thumbnail($item['image'], 850, 850); ?>" />
+                                    <img loading="lazy" style="object-fit: cover;" src="<?php print thumbnail($item['image'], 850, 850); ?>" />
                                 </div>
                             </a>
                         <?php endif; ?>

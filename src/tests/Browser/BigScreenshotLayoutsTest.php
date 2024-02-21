@@ -93,38 +93,38 @@ class BigScreenshotLayoutsTest extends DuskTestCase
         });
 
 
-        $this->browse(function (Browser $browser) use($tempaltePathMain) {
-            $browser->visit('/');
-            $browser->resize(1360, 800);
-            $browser->pause(5000);
+//        $this->browse(function (Browser $browser) use($tempaltePathMain) {
+//            $browser->visit('/');
+//            $browser->resize(1360, 800);
+//            $browser->pause(5000);
+//
+//            $screenshotFile = $tempaltePathMain . '/screenshot.jpg';
+//            $browser->driver->takeScreenshot($screenshotFile);
+//
+//            $tn = new Thumbnailer($screenshotFile);
+//            $tn->createThumb(array('width' => 820, 'height'=>460), $screenshotFile);
+//
+//        });
 
-            $screenshotFile = $tempaltePathMain . '/screenshot.jpg';
-            $browser->driver->takeScreenshot($screenshotFile);
-
-            $tn = new Thumbnailer($screenshotFile);
-            $tn->createThumb(array('width' => 820, 'height'=>460), $screenshotFile);
-
-        });
-
-        $this->browse(function (Browser $browser) use($tempaltePathMain) {
-
-            $browser->visit('/');
-
-            $body = $browser->driver->findElement(WebDriverBy::tagName('body'));
-            if (!empty($body)) {
-
-                $browser->script("document.body.classList.add('js-dusk-browser-test')");
-
-                $currentSize = $body->getSize();
-                //set window to full height
-                $size = new WebDriverDimension(1300, $currentSize->getHeight());
-                $browser->driver->manage()->window()->setSize($size);
-            }
-
-            $browser->pause(5000);
-
-            $browser->driver->takeScreenshot($tempaltePathMain . '/screenshot_large.jpg');
-        });
+//        $this->browse(function (Browser $browser) use($tempaltePathMain) {
+//
+//            $browser->visit('/');
+//
+//            $body = $browser->driver->findElement(WebDriverBy::tagName('body'));
+//            if (!empty($body)) {
+//
+//                $browser->script("document.body.classList.add('js-dusk-browser-test')");
+//
+//                $currentSize = $body->getSize();
+//                //set window to full height
+//                $size = new WebDriverDimension(1300, $currentSize->getHeight());
+//                $browser->driver->manage()->window()->setSize($size);
+//            }
+//
+//            $browser->pause(5000);
+//
+//            $browser->driver->takeScreenshot($tempaltePathMain . '/screenshot_large.jpg');
+//        });
 
 
     }
