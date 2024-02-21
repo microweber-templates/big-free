@@ -4,7 +4,7 @@
 
 type: layout
 
-name: Testimonials
+name: Testimonials - Parallax
 
 position: 21
 

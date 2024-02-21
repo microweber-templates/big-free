@@ -67,7 +67,7 @@ description: Skin-6
                     <?php if ($item['client_picture']): ?>
                         <div class="w-80 mx-auto mb-4">
                             <div class="img-as-background rounded-circle square">
-                                <img src="<?php print thumbnail($item['client_picture'], 120); ?>">
+                                <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 120); ?>">
                             </div>
                         </div>
                     <?php endif; ?>

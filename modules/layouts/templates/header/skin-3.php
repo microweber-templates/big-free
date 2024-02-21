@@ -27,7 +27,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
 <section class="section py-0 d-flex align-items-center justify-content-center">
     <module type="background"  id="background-layout--<?php print $params['id'] ?>"/>
-    <div class="mw-layout-container py-4 no-element edit   no-typing no-select" field="layout-header-skin-3-<?php print $params['id'] ?>" rel="module">
+    <div class="mw-layout-container py-4 no-element edit no-select" field="layout-header-skin-3-<?php print $params['id'] ?>" rel="module">
         <div class="row">
             <div class="col-12  safe-mode  mx-auto ">
                 <div class="row d-flex align-items-center justify-content-center safe-mode ">
@@ -39,9 +39,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                         </div>
                     </div>
 
-                    <div class="col-12  safe-mode  col-md-6 no-typing   allow-select">
-                        <div class="img-as-background no-typing" style="min-height: 100vh;">
-                            <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-6.jpg" alt="">
+                    <div class="col-12  safe-mode  col-md-6   allow-select">
+                        <div class="img-as-background" style="min-height: 100vh;">
+                            <img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-6.jpg" alt="">
                         </div>
                     </div>
                 </div>

@@ -4,7 +4,7 @@
 
 type: layout
 
-name: Content 11
+name: Content 11 - Parallax
 
 position: 11
 

@@ -1,5 +1,10 @@
 <div class="text-left">
-    <div>Tags</div>
+    <label>
+        {{_e('Tags')}}
+        <div wire:loading wire:target="filterTag">
+            <i class="mdi mdi-loading mdi-spin"></i>
+        </div>
+    </label>
     <div x-data="{showMoreTags: false}">
         @php
             $limited = 5;
@@ -25,19 +30,22 @@
                 @include('microweber-module-shop::livewire.shop.filters.tags.tag-button', ['tagSlug'=>$tagSlug, 'tagName'=>$tagName])
             @endforeach
 
-                <button type="button" class="btn btn-outline-danger btn-sm mt-2"  x-on:click="showMoreTags = false">
-                    Hide tags
+                <button type="button" class="btn btn-link btn-sm mt-2"  x-on:click="showMoreTags = false">
+                    {{_e('Hide tags')}}
                 </button>
         </div>
 
-        <button type="button" class="btn btn-outline-danger btn-sm mt-2" x-show="!showMoreTags" x-on:click="showMoreTags = true">
-            Load more tags
+        <button type="button" class="btn btn-link btn-sm mt-2" x-show="!showMoreTags" x-on:click="showMoreTags = true">
+            {{_e('Load more')}}...
         </button>
 
     </div>
     @if(!empty($filteredTags))
-        <button type="button" wire:click="filterClearTags()" class="btn btn-outline-danger btn-sm mt-2">
-            Clear All
+        <button type="button" wire:click="filterClearTags()" class="btn btn-link btn-sm mt-2">
+            {{_e('Clear All')}}
+            <div wire:loading wire:target="filterClearTags">
+                <i class="mdi mdi-loading mdi-spin"></i>
+            </div>
         </button>
     @endif
 </div>
