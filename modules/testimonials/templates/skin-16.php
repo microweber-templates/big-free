@@ -98,7 +98,7 @@ description: Skin-16
             <div class="tony-template-testimonial testimonials-background-variable testimonialBorderVariable mx-3 p-5">
 
                 <div class="py-3 mb-4">
-                    <img height="20" width="auto" src="<?php print template_url(); ?>assets/img/layouts/tony/testimonials-stars.png" class=""/>
+                    <img loading="lazy" height="20" width="auto" src="<?php print template_url(); ?>assets/img/layouts/tony/testimonials-stars.png" class=""/>
                 </div>
                 <p class="testimonials-tony-p mb-8"><?php print character_limiter($item['content'], $limit); ?></p>
 
@@ -109,7 +109,7 @@ description: Skin-16
                                 <div class="me-3">
                                     <div class="w-40 mx-auto">
                                         <div class="img-as-background rounded-circle square">
-                                            <img src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
+                                            <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
                                         </div>
                                     </div>
                                 </div>

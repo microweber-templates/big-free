@@ -1,9 +1,9 @@
-
+<div class="product">
     <a class="text-decoration-none" href="{{content_link($product->id)}}">
-        <div class="background-image-holder" style="background-image: url('{{$product->thumbnail(1000,1000)}}'); height: 450px; background-size: contain;">
+        <div class="background-image-holder" style="background-image: url('{{$product->thumbnail(1300,1300)}}'); height: 300px;">
 
             <div @if($product->getContentDataByFieldName('label-color'))
-                 style="background-color: {{$product->getContentDataByFieldName('label-color')}} "
+                     style="background-color: {{$product->getContentDataByFieldName('label-color')}} "
                 @endif >
                 @if($product->getContentDataByFieldName('label-type') == 'percent')
                     <div class="discount-label">
@@ -44,3 +44,4 @@
         <span class="badge badge-lg"><a href="?tags[]={{$tag->slug}}">{{$tag->name}}</a></span>
     @endforeach
 
+</div>

@@ -20,7 +20,7 @@
                     default-fields="Email[type=email,field_size=12,show_placeholder=true]" input_class="form-control">
         </div>
 
-        <div class="col-md-4 mt-2">
+        <div class="col-md-4 mb-2">
             <module type="btn" button_action="submit" button_style="btn-primary" button_size="w-100 justify-content-center" button_text="<?php _lang("Join", 'template/big'); ?>">
         </div>
     </div>

@@ -79,7 +79,7 @@ description: Skin-9
         <?php foreach ($data as $item): ?>
             <div class="border testimonials-background-variable testimonialBorderVariable   mx-3 h-100 p-5 ">
                 <?php if ($item['client_picture']): ?>
-                    <img src="<?php print thumbnail($item['client_picture'], 130); ?>" class="d-block mb-3"/>
+                    <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 130); ?>" class="d-block mb-3"/>
                 <?php endif; ?>
 
                 <?php if ($item['name']): ?>

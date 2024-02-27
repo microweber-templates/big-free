@@ -38,7 +38,7 @@ if (page_title()) {
         <div class="row">
             <div class="col-12 mb-2 cloneable element safe-mode layouts-grids-background">
                 <div class="cube-wrapper">
-                    <img class=" " src="<?php print template_url(); ?>assets/img/layouts/gallery-1-7.jpg">
+                    <img loading="lazy" class=" " src="<?php print template_url(); ?>assets/img/layouts/gallery-1-7.jpg">
                 </div>
             </div>
         </div>
