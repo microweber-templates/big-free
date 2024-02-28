@@ -83,6 +83,25 @@
             ],
             "rootSelector" : ".module-custom-fields"
 
+        },
+        {
+            "title": "Colors Palettes",
+            "description": "Pick a color palette, and customize it to achieve the style you want.",
+            "settings": [
+                {
+                    "title": "Color Palette",
+                    "description": "Choose a color palette to use for your site.",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldType": "colorPalette",
+                    "fieldSettings": {
+                        "colorPaletteFromTemplateFolderLibrary": [
+                            "assets/design-styles/colors"
+                        ]
+                    }
+                }
+            ]
         }
     ]
 }

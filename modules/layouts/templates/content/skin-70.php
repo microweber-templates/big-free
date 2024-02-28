@@ -6,7 +6,7 @@
 
 type: layout
 
-name: Content 70
+name: Content 70 - Video Background
 
 position: 70
 

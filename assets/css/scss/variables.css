@@ -1,6 +1,6 @@
 /*
 Error: $color: 'theme-color("primary")' is not a color for `darken'
-        on line 181 of D:\xampp\htdocs\git\microweber\userfiles\templates\big\assets\css\scss\variables.scss
+        on line 181 of C:\xampp\htdocs\microweber\userfiles\templates\big\assets\css\scss\variables.scss
 
 176: //
 177: // Style anchor elements.
@@ -15,7 +15,7 @@ Error: $color: 'theme-color("primary")' is not a color for `darken'
 186: // Paragraphs
 
 Backtrace:
-D:\xampp\htdocs\git\microweber\userfiles\templates\big\assets\css\scss\variables.scss:181
+C:\xampp\htdocs\microweber\userfiles\templates\big\assets\css\scss\variables.scss:181
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:315:in `reformat_argument_error'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:162:in `rescue in _perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:132:in `_perform'
@@ -53,4 +53,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: $color: 'theme-color(\"primary\")' is not a color for `darken'\A         on line 181 of D:\xampp\htdocs\git\microweber\userfiles\templates\big\assets\css\scss\variables.scss\A \A 176: //\A 177: // Style anchor elements.\A 178: \A 179: $link-color:                              theme-color(\"primary\") !default;\A 180: $link-decoration:                         none !default;\A 181: $link-hover-color:                        darken($link-color, 15%) !default;\A 182: $link-hover-decoration:                   underline !default;\A 183: // Darken percentage for links with `.text-*` class (e.g. `.text-success`)\A 184: $emphasized-link-hover-darken-percentage: 15% !default;\A 185: \A 186: // Paragraphs"; }
+  content: "Error: $color: 'theme-color(\"primary\")' is not a color for `darken'\A         on line 181 of C:\xampp\htdocs\microweber\userfiles\templates\big\assets\css\scss\variables.scss\A \A 176: //\A 177: // Style anchor elements.\A 178: \A 179: $link-color:                              theme-color(\"primary\") !default;\A 180: $link-decoration:                         none !default;\A 181: $link-hover-color:                        darken($link-color, 15%) !default;\A 182: $link-hover-decoration:                   underline !default;\A 183: // Darken percentage for links with `.text-*` class (e.g. `.text-success`)\A 184: $emphasized-link-hover-darken-percentage: 15% !default;\A 185: \A 186: // Paragraphs"; }

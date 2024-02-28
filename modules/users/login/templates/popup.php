@@ -36,20 +36,20 @@ description: Login default
 
         <form method="post" id="user_login_<?php print $params['id'] ?>" action="#" autocomplete="off">
 
-            <div class="alert alert-mini alert-danger margin-bottom-30" style="margin: 0;display: none;"></div>
+            <div class="alert alert-mini alert-danger mb-3" style="margin: 0;display: none;"></div>
 
             <div class="form-group">
-                <label for="" class="control-label"><?php _lang("Username or E-mail" , "templates/wine"); ?></label>
+                <label for="" class="form-label"><?php _lang("Username or E-mail" , "templates/wine"); ?></label>
                 <input class="form-control input-lg" type="text" name="username" placeholder="<?php _lang("Username or E-mail" , "templates/wine"); ?>">
             </div>
 
-            <div class="form-group m-t-20">
-                <label for="" class="control-label"><?php _lang("Password" , "templates/wine"); ?></label>
+            <div class="form-group mt-2">
+                <label for="" class="form-label"><?php _lang("Password" , "templates/wine"); ?></label>
                 <input class="form-control input-lg" type="password" name="password" placeholder="<?php _lang("Password" , "templates/wine"); ?>">
             </div>
 
             <?php if (isset($login_captcha_enabled) and $login_captcha_enabled): ?>
-                <label for="" class="control-label"><?php _lang("Security code" , "templates/wine"); ?></label>
+                <label for="" class="form-label"><?php _lang("Security code" , "templates/wine"); ?></label>
                 <module type="captcha"/>
             <?php endif; ?>
 
@@ -115,8 +115,10 @@ description: Login default
 
         <p class="or"><span><?php _lang("or" , "templates/wine"); ?></span></p>
 
-        <div class="act create">
-            <a href="<?php print register_url(); ?>" class="js-show-register-window"><span><?php _lang("Create New Account" , "templates/wine"); ?></span></a>
+        <div class="act">
+            <a href="<?php print register_url(); ?>" class="js-show-register-window  d-flex align-items-center justify-content-center gap-2"><span><?php _lang("Create New Account" , "templates/wine"); ?></span>
+                <i class="mw-micon-solid-Arrow-OutRight"></i>
+            </a>
         </div>
     </div>
 <?php endif; ?>
