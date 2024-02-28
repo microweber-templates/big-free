@@ -106,7 +106,7 @@ description: Skin-5
                                                 </div>
                                             <?php endif; ?>
                                         <?php endif; ?>
-                                        <img src="<?php print thumbnail($item['image'], 850, 850); ?>" />
+                                        <img loading="lazy" src="<?php print thumbnail($item['image'], 850, 850); ?>" />
 
                                     </div>
                                 </a>
@@ -119,30 +119,35 @@ description: Skin-5
                                     </a>
                                 <?php endif; ?>
 
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="price-holder text-center">
-                                            <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
-                                                <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
-                                                    <?php
-                                                    $vals2 = array_values($item['prices']);
-                                                    $val1 = array_shift($vals2);
-                                                    ?>
-                                                    <p>
-                                                        <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                            <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
-                                                        <?php endif; ?>
-                                                        <span class="price"><?php print currency_format($val1); ?></span>
-                                                    </p>
+                                <?php
+                                $itemPrices = $item['prices'];
+                                $firstPrice = reset($itemPrices);
+                                if ($firstPrice !== false && $firstPrice > 0): ?>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="price-holder text-center">
+                                                <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
+                                                    <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
+                                                        <?php
+                                                        $vals2 = array_values($item['prices']);
+                                                        $val1 = array_shift($vals2);
+                                                        ?>
+                                                        <p>
+                                                            <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
+                                                                <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
+                                                            <?php endif; ?>
+                                                            <span class="price"><?php print currency_format($val1); ?></span>
+                                                        </p>
+                                                    <?php endif; ?>
                                                 <?php endif; ?>
-                                            <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end text-right">
+                                            <a href="<?php print $item['link'] ?>" class="btn btn-outline-primary btn-sm">View</a>
+
                                         </div>
                                     </div>
-                                    <div class="col-6 text-end text-right">
-                                        <a href="<?php print $item['link'] ?>" class="btn btn-outline-primary btn-sm">View</a>
-
-                                    </div>
-                                </div>
+                                <?php endif; ?>
 
                             </div>
                         </div>

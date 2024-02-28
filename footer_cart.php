@@ -133,20 +133,23 @@
 
             <div class="modal-body">
                 <div class="js-login-window">
-                    <div class="icon"><i class="material-icons">person</i></div>
+                    <div class="icon"><i class="mw-micon-solid-Administrator"></i></div>
 
                     <div type="users/login" template="popup" id="loginModalModuleLogin"></div>
                 </div>
 
                 <div class="js-register-window" style="display:none;">
-                    <div class="icon"><i class="material-icons">exit_to_app</i></div>
+                    <div class="icon"><i class="mw-micon-solid-Arrow-Outside"></i></div>
 
                     <div type="users/register" id="loginModalModuleRegister"></div>
 
                     <p class="or"><span>or</span></p>
 
-                    <div class="act login">
-                        <a href="#" class="js-show-login-window"><span><?php _lang("Back to Login", "templates/big") ?></span></a>
+                    <div class="act ">
+                        <a href="#" class="js-show-login-window d-flex align-items-center justify-content-center gap-2"><span><?php _lang("Back to Login", "templates/big") ?></span>
+                            <i class="mw-micon-solid-Arrow-OutRight"></i>
+
+                        </a>
                     </div>
                 </div>
             </div>

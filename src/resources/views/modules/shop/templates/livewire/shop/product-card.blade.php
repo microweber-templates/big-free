@@ -1,15 +1,15 @@
-
+<div class="product">
     <a class="text-decoration-none" href="{{content_link($product->id)}}">
-        <div class="background-image-holder" style="background-image: url('{{$product->thumbnail(1000,1000)}}'); height: 450px; background-size: contain;">
+        <div class="background-image-holder" style="background-image: url('{{$product->thumbnail(1300,1300)}}'); height: 300px;">
 
             <div @if($product->getContentDataByFieldName('label-color'))
-                 style="background-color: {{$product->getContentDataByFieldName('label-color')}} "
+                     style="background-color: {{$product->getContentDataByFieldName('label-color')}} "
                 @endif >
                 @if($product->getContentDataByFieldName('label-type') == 'percent')
                     <div class="discount-label">
-                                                <span class="discount-percentage">
-                                                      {{$product->getDiscountPercentage()}} %
-                                                </span>
+                        <span class="discount-percentage">
+                              {{$product->getDiscountPercentage()}} %
+                        </span>
                         <span class="discount-label-text"><?php _lang("Discount"); ?></span>
                     </div>
 
@@ -29,18 +29,24 @@
 
     <p>{{$product->content_text}}</p>
 
-    <div class="d-flex items-center text-center align-items-center price-holder">
+    @if(isset($settings['hide_price']) && $settings['hide_price'] == false)
+        @if(isset($product->price) AND $product->price)
 
-        @if($product->hasSpecialPrice())
-            <h6 class="price-old mb-0"><?php print currency_format($product->price); ?></h6>
-            <h6 class="price mb-0"><?php print currency_format($product->specialPrice); ?></h6>
-        @else
-            <h6 class="price mb-0"><?php print currency_format($product->price); ?></h6>
+            <div class="d-flex items-center text-center align-items-center price-holder">
+
+                @if($product->hasSpecialPrice())
+                    <h6 class="price-old mb-0"><?php print currency_format($product->price); ?></h6>
+                    <h6 class="price mb-0"><?php print currency_format($product->specialPrice); ?></h6>
+                @else
+                    <h6 class="price mb-0"><?php print currency_format($product->price); ?></h6>
+                @endif
+
+            </div>
         @endif
-
-    </div>
+    @endif
 
     @foreach($product->tags as $tag)
         <span class="badge badge-lg"><a href="?tags[]={{$tag->slug}}">{{$tag->name}}</a></span>
     @endforeach
 
+</div>
