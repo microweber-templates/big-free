@@ -112,16 +112,16 @@ description: Skin-19
                            </div>
 
 
-                           <img class="mw-ziza-testimonials-item-dots" src="<?php print template_url(); ?>assets/img/layouts/ziza/ziza-dots-94.png"/>
+                           <img loading="lazy" class="mw-ziza-testimonials-item-dots" src="<?php print template_url(); ?>assets/img/layouts/ziza/ziza-dots-94.png"/>
                        </div>
                     </div>
                 <?php endif; ?>
 
 
-                <div class="col-xl-6 col-md-10 col-12 me-xl-auto mx-auto text-xl-start text-center">
+                <div class="col-xl-6 col-md-10 col-12 me-xl-auto mx-auto text-xl-start text-center ">
                     <h4 class="mb-1"><?php print $item['name']; ?></h4>
                     <p><?php print $item['client_role']; ?></p> &nbsp;
-                    <p  "><?php print character_limiter($item['content'], $limit); ?></p>
+                    <p><?php print character_limiter($item['content'], $limit); ?></p>
                 </div>
 
             </div>

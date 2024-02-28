@@ -15,9 +15,9 @@ if($size != 'auto') {
     <?php if ($logoimage != '' and $logoimage != false): ?>
         <span class="mw-ui-col-x" style="width: <?php print $size; ?>">
                     <?php if ($logoimage_inverse != '' and $logoimage_inverse != false): ?>
-                        <img src="<?php print $logoimage_inverse; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-dark" />
+                        <img loading="lazy" src="<?php print $logoimage_inverse; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-dark" />
                     <?php endif; ?>
-            <img src="<?php print $logoimage; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-light" />
+            <img loading="lazy" src="<?php print $logoimage; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-light" />
                 </span>
     <?php else: ?>
         <span class="mw-logo-no-values"><?php _lang('Logo', 'template/big'); ?></span>

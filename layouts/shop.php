@@ -32,9 +32,9 @@ position: 4
 
 
         <div class="col-12 col-lg-3">
-            <div class="edit" rel="content" field="shop-sidebar">
+
                 <?php include(__DIR__ . DS .'shop_sidebar.php'); ?>
-            </div>
+
         </div>
 
     </div>

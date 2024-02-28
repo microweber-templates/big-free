@@ -132,31 +132,43 @@ if (!isset($tn[1])) {
                                         </div>
                                     <?php endif; ?>
 
-                                    <div class="price-holder">
-                                        <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
-                                            <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
-                                                <?php
-                                                $vals2 = array_values($item['prices']);
-                                                $val1 = array_shift($vals2);
-                                                ?>
+                                    <?php
+                                    $itemPrices = $item['prices'];
+                                    $firstPrice = reset($itemPrices);
+                                    if ($firstPrice !== false && $firstPrice > 0): ?>
 
-                                                <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                <h6 class="price-old mb-0"><?php print currency_format($item['original_price']); ?></h6>
+                                        <div class="price-holder">
+                                            <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
+                                                <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
+                                                    <?php
+                                                    $vals2 = array_values($item['prices']);
+                                                    $val1 = array_shift($vals2);
+                                                    ?>
+
+                                                    <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
+                                                        <h6 class="price-old mb-0"><?php print currency_format($item['original_price']); ?></h6>
+                                                    <?php endif; ?>
+                                                    <h6 class="price mb-0"><?php print currency_format($val1); ?></h6>
+
                                                 <?php endif; ?>
-                                                <h6 class="price mb-0"><?php print currency_format($val1); ?></h6>
+                                            <?php endif; ?>
+                                        </div>
+                                <?php endif; ?>
+                                </div>
 
+                                <?php
+
+                                if ($firstPrice !== false && $firstPrice > 0): ?>
+
+                                    <div class="py-4">
+                                        <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                            <?php if ($in_stock == true): ?>
+                                                <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary px-5 btn-lg"> <?php _lang("Buy now", 'templates/big') ?></a>
                                             <?php endif; ?>
                                         <?php endif; ?>
                                     </div>
-                                </div>
+                                <?php endif; ?>
 
-                                <div class="py-4">
-                                    <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                        <?php if ($in_stock == true): ?>
-                                            <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary px-5 btn-lg"> <?php _lang("Buy now", 'templates/big') ?></a>
-                                        <?php endif; ?>
-                                    <?php endif; ?>
-                                </div>
                             </div>
                         </div>
                     </div>

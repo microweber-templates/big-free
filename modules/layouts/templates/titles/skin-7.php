@@ -4,7 +4,7 @@
 
 type: layout
 
-name: Titles 7
+name: Titles 7 - Parallax
 
 position: 7
 
