@@ -64,4 +64,10 @@ description: Skin-5
         <li class="mx-0 mb-2"><div class="bg-body rounded-circle square w-45px d-flex align-items-center justify-content-center"><a href="//discord.com/invite/<?php print $discord_url; ?>" target="_blank" class="  text-opacity-5 position-absolute"><i class="mdi mdi-discord mdi-24px"></i></a></div></li>
 
     <?php } ?>
+
+
+    <?php if ($skype_enabled) { ?>
+        <li class="mx-0 mb-2"><div class="bg-body rounded-circle square w-45px d-flex align-items-center justify-content-center"><a href="//join.skype.com/invite/<?php print $skype_url; ?>" target="_blank" class="  text-opacity-5 position-absolute"><i class="mdi mdi-skype mdi-24px"></i></a></div></li>
+
+    <?php } ?>
 </ul>

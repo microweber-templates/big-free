@@ -67,7 +67,9 @@ if (!isset($tn[1])) {
                 }
             }
             ?>
-            <div class="mx-auto mx-md-0 col-sm-10 col-md-6 col-xl-4 mb-5 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
+            <div class="mx-auto mx-md-0 col-sm-10 col-md-6 col-xl-4 mb-5 item-<?php print $item['id'] ?>"
+                 data-masonry-filter="<?php print $itemCats; ?>" itemscope
+                 itemtype="<?php print $schema_org_item_type_tag ?>">
                 <div class=" product h-100 d-flex flex-column px-sm-3 position-relative">
                     <div class="flower-ecommerce-card card h-100 d-flex flex-column">
                         <?php if (is_array($item['prices'])): ?>
@@ -82,7 +84,8 @@ if (!isset($tn[1])) {
                                 <div class="img-as-background square-75  ">
                                     <?php if (isset($itemData['label-type']) && $itemData['label-type'] === 'text'): ?>
                                         <div class="position-absolute  top-0 left-0 m-2" style="z-index: 3;">
-                                            <div class="badge text-white px-3 pb-1 pt-2 rounded-0" style="background-color: <?php echo $itemData['label-color']; ?>;"><?php echo $itemData['label']; ?></div>
+                                            <div class="badge text-white px-3 pb-1 pt-2 rounded-0"
+                                                 style="background-color: <?php echo $itemData['label-color']; ?>;"><?php echo $itemData['label']; ?></div>
                                         </div>
                                     <?php endif; ?>
 
@@ -93,9 +96,9 @@ if (!isset($tn[1])) {
                                         ?>
 
                                         <?php if (isset($item['price_discount_percent']) and $item['price_discount_percent']): ?>
-                                        <?php
-                                        $percentChange = $item['price_discount_percent'];
-                                        ?>
+                                            <?php
+                                            $percentChange = $item['price_discount_percent'];
+                                            ?>
                                         <?php endif; ?>
                                         <?php if (isset($itemData['label-type']) && $itemData['label-type'] === 'percent' && $percentChange > 0): ?>
 
@@ -107,14 +110,15 @@ if (!isset($tn[1])) {
                                             </div>
                                         <?php endif; ?>
                                     <?php endif; ?>
-                                    <img src="<?php print thumbnail($item['image'], 850, 850); ?>" />
+                                    <img loading="lazy" src="<?php print thumbnail($item['image'], 850, 850); ?>"/>
                                 </div>
                             </a>
                         <?php endif; ?>
 
                         <div class="pt-1 pb-3 mx-4">
                             <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
-                                <a href="<?php print $item['link'] ?>" class="text-dark text-decoration-none text-start p-3">
+                                <a href="<?php print $item['link'] ?>"
+                                   class="text-dark text-decoration-none text-start p-3">
                                     <h5 class="mt-3 mb-3 font-weight-normal"><?php print $item['title'] ?></h5>
                                 </a>
                             <?php endif; ?>
@@ -125,31 +129,38 @@ if (!isset($tn[1])) {
                                 </div>
                             <?php endif; ?>
 
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-12 price-holder">
-                                    <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
-                                        <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
-                                            <?php
-                                            $vals2 = array_values($item['prices']);
-                                            $val1 = array_shift($vals2);
-                                            ?>
+                            <?php
+                            $itemPrices = $item['prices'];
+                            $firstPrice = reset($itemPrices);
+                            if ($firstPrice !== false && $firstPrice > 0): ?>
 
-                                            <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                <h5 class="price-old mb-0"><?php print currency_format($item['original_price']); ?></h5>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-12 price-holder">
+                                        <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
+                                            <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
+                                                <?php
+                                                $vals2 = array_values($item['prices']);
+                                                $val1 = array_shift($vals2);
+                                                ?>
+
+                                                <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
+                                                    <h5 class="price-old mb-0"><?php print currency_format($item['original_price']); ?></h5>
+                                                <?php endif; ?>
+                                                <h5 class="price mb-0"><?php print currency_format($val1); ?></h5>
+
                                             <?php endif; ?>
-                                            <h5 class="price mb-0"><?php print currency_format($val1); ?></h5>
-
                                         <?php endif; ?>
-                                    <?php endif; ?>
-                                </div>
+                                    </div>
 
-                                <div class="col-lg-6 col-12 text-end text-right">
-                                    <a href="<?php print $item['link'] ?>" class="flower-ecommerce-btn btn btn-primary">Join Now</a>
-                                    <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                        <!--<a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>//');" class="btn btn-outline-primary"><i class="mw-micon-Shopping-Cart"></i> Add to cart</a>-->
-                                    <?php endif; ?>
+                                    <div class="col-lg-6 col-12 text-end text-right">
+                                        <a href="<?php print $item['link'] ?>"
+                                           class="flower-ecommerce-btn btn btn-primary">Join Now</a>
+                                        <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                            <!--<a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>//');" class="btn btn-outline-primary"><i class="mw-micon-Shopping-Cart"></i> Add to cart</a>-->
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
-                            </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>

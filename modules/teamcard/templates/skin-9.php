@@ -33,11 +33,11 @@ description: Skin-9
                         <div class="w-175 mx-auto">
                             <?php if ($slide['file']) { ?>
                                 <div class="img-as-background square rounded-circle">
-                                    <img src="<?php print thumbnail($slide['file'], 800); ?>"/>
+                                    <img loading="lazy" src="<?php print thumbnail($slide['file'], 800); ?>"/>
                                 </div>
                             <?php } else { ?>
                                 <div class="img-as-background square rounded-circle">
-                                    <img src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
+                                    <img loading="lazy" src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
                                 </div>
                             <?php } ?>
                         </div>

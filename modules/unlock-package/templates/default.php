@@ -76,10 +76,10 @@ description: Default
     <div class="col-md-8 unlock-package-columns ">
 
         <div class="px-5">
-            <h1 class="font-weight-bold">Unlock The Power of <span class="text-orange">BIG Template</span></h1>
+            <h1 class="font-weight-bold">Unlock The power of <span class="text-orange">BIG Template</span></h1>
             <h4>Use all layouts to make an awesome websites!</h4>
-            <h4>Buy license key "Big Template" and unlock 350+ more layouts,</h4>
-            <h4>only for $69 per year or $269 lifetime license</h4>
+            <h4>Buy license key "Big Template" and unlock 300 more layouts,</h4>
+            <h4>only for $59 per year or $169 lifetime license</h4>
 
             <br><br>
             <a class="btn btn-primary get-license-btn" target="_blank" href="https://whitelabel.microweber.com/big">Get License</a>
