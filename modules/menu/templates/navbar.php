@@ -13,9 +13,9 @@ description: Navigation bar
 ?>
 
 <?php
-$menu_filter['ul_class'] = 'navbar-nav navbar-submenu-overflow';
+$menu_filter['ul_class'] = 'navbar-nav navbar-submenu-overflow navbar--big-default';
 $menu_filter['ul_class_deep'] = 'dropdown-menu ul-deep';
-$menu_filter['li_class'] = 'nav-item';
+$menu_filter['li_class'] = 'nav-item ';
 $menu_filter['a_class'] = 'nav-link px-3';
 //
 $menu_filter['li_submenu_class'] = 'dropdown nav-item';
@@ -33,6 +33,22 @@ if ($mt != false) {
     print lnotif("There are no items in the menu <b>" . $params['menu-name'] . '</b>');
 }
 ?>
+
+ <style>
+    .navbar--big-default li.nav-item:hover > ul {
+        display: block !important;
+        position: absolute !important;
+    }
+    .navbar--big-default li:hover > a{
+        background-color: var(--mw-top-header-button-background-hover-color);
+         color: var(--mw-top-header-button-text-hover-color) !important;
+         transition: .3s;
+    }
+    .navbar--big-default li ul ul{
+        top:0;
+        left: 100%;
+    }
+ </style>
 <script>
     Array.from(document.querySelectorAll('.navbar-submenu-overflow')).forEach(node => {
         node.classList.remove('navbar-submenu-overflow');

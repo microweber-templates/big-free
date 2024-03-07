@@ -6,7 +6,7 @@ $(function () {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
-     
+
 // checking for images and add class
 
 var checkFirstSectionForNav = function () {
@@ -189,3 +189,4 @@ $(document).ready(function(){
     document.addEventListener('touchstart', function(){}, true);
 
 });
+

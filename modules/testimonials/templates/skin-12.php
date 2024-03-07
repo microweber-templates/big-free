@@ -53,7 +53,7 @@ description: Skin-12
                         <?php if ($item['client_picture']): ?>
                             <div class="w-80 mx-auto my-4">
                                 <div class="img-as-background rounded-circle square">
-                                    <img src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
+                                    <img loading="lazy" src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
                                 </div>
                             </div>
                         <?php endif; ?>
@@ -77,7 +77,6 @@ description: Skin-12
 
                         <p><?php print character_limiter($item['content'], $limit); ?></p>
 
-                        <module type="social_links" template="skin-5"/>
                     </div>
                 </div>
             </div>
