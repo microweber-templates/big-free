@@ -63,4 +63,8 @@ description: Skin-1
     <?php if ($discord_enabled) { ?>
         <li class="mx-1"><a href="//discord.com/invite/<?php print $discord_url; ?>" target="_blank" class=" "><i class="mdi mdi-discord mdi-40px"></i></a></li>
     <?php } ?>
+
+    <?php if ($skype_enabled) { ?>
+        <li class="mx-1"><a href="//join.skype.com/invite/<?php print $skype_url; ?>" target="_blank" class=" "><i class="mdi mdi-skype mdi-40px"></i></a></li>
+    <?php } ?>
 </ul>

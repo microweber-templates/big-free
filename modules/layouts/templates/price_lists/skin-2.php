@@ -26,20 +26,24 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit     " field="layout-price-lists-skin-2-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?>">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element   container">
+    <div class="mw-layout-container no-element   container  edit safe-mode no-select " field="layout-price-lists-skin-2-<?php print $params['id'] ?>" rel="module">
         <div class="row col-12">
-            <div class="col-12 col-sm-10 col-lg-6 mx-auto cloneable element safe-mode">
+            <div class="col-12 col-sm-10 col-lg-6 mx-auto cloneable element safe-mode ">
                 <div class="pe-lg-5 text-lg-start pb-5  ">
-                    <img src="<?php print template_url(); ?>assets/img/layouts/coffee.jpg" class=" "/>
+<<<<<<< Updated upstream
+                    <img loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/coffee.jpg" class=" "/>
+=======
+                   <img class="allow-select" loading="lazy" src="<?php print template_url(); ?>assets/img/layouts/coffee.jpg" class=" "/>
+>>>>>>> Stashed changes
                 </div>
             </div>
 
-            <div class="col-12 col-sm-10 col-lg-6 mx-auto text-lg-start pb-5 d-flex flex-column cloneable element safe-mode">
-                <div class="row   py-5 ">
+            <div class="col-12 col-sm-10 col-lg-6 mx-auto text-lg-start pb-5 d-flex flex-column cloneable element safe-mode allow-select">
+                <div class="row   py-5 regular-mode">
                     <h4 class="">Our prices</h4>
                     <div class="col-12">
                         <div class="cloneable element safe-mode py-4">

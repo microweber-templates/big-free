@@ -12,7 +12,7 @@ a i:before {
     color: var(--mw-btn-text-color);
     border-color: var(--mw-btn-border-color);
 
-    &:hover, &:active {
+    &:hover, &:active, &.active {
         background-color: var(--mw-btn-background-hover-color);
         color: var(--mw-btn-text-hover-color);
     }
@@ -29,7 +29,7 @@ a i:before {
         }
     }
 
-    &:hover, &:active {
+    &:hover, &:active, &.active {
         background-color: var(--mw-btn-secondary-background-hover-color) !important;
         color: var(--mw-btn-secondary-text-hover-color) !important;
 
@@ -53,7 +53,7 @@ a i:before {
         }
     }
 
-    &:hover, &:active {
+    &:hover, &:active, &.active {
         background-color: var(--mw-btn-outline-background-hover-color) !important;
         color: var(--mw-btn-outline-text-hover-color) !important;
 
@@ -166,7 +166,7 @@ a i:before {
     input[type="tel"]:focus,
     input[type="color"]:focus,
     .uneditable-input:focus {
-        border-color: color-mix(in srgb, var(--mw-form-control-background) 50%, transparent);
+        border-color: color-mix(in srgb, var(--mw-form-control-border-color) 50%, transparent);
         box-shadow: none;
         outline: 0 none;
     }
@@ -266,6 +266,12 @@ h6 {
 .header-background, .mw-vhmbgr-active-popup {
 
     background-color: var(--mw-header-background-color) !important;
+
+    .dropdown-menu {
+        background-color: var(--mw-header-background-color) !important;
+        border-color: var(--mw-header-background-color) !important;
+        border-radius: 0 !important;
+    }
 
     a, .mw-vhmbgr-wrapper {
         color: var(--mw-header-link-color) !important;
@@ -390,5 +396,16 @@ h6 {
     padding: 12px 15px !important;
     border-radius: 0 !important;
     border: none !important;
+}
+
+.hover-primary {
+
+    &:hover {
+        background-color: var(--mw-link-color);
+
+        * {
+            color: var(--mw-text-on-dark-background-color) !important;
+        }
+    }
 }
 
