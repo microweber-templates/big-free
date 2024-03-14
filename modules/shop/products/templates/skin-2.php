@@ -122,7 +122,7 @@ if (!isset($tn[1])) {
                                             </div>
                                         <?php endif; ?>
                                     <?php endif; ?>
-                                    <img src="<?php print thumbnail($item['image'], 950, 950); ?>" />
+                                    <img loading="lazy" style="object-fit: cover;" src="<?php print thumbnail($item['image'], 950, 950); ?>" />
                                 </div>
                             </a>
                         <?php endif; ?>
@@ -135,28 +135,34 @@ if (!isset($tn[1])) {
                                 </a>
                             <?php endif; ?>
 
-                            <div class="price-holder text-center justify-content-center">
-                                <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
-                                    <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
-                                        <?php
-                                        $vals2 = array_values($item['prices']);
-                                        $val1 = array_shift($vals2);
-                                        ?>
-                                        <p>
-                                            <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
-                                            <?php endif; ?>
-                                            <span class="price"><?php print currency_format($val1); ?></span>
-                                        </p>
-                                    <?php endif; ?>
-                                <?php endif; ?>
-                            </div>
+                            <?php
+                            $itemPrices = $item['prices'];
+                            $firstPrice = reset($itemPrices);
+                            if ($firstPrice !== false && $firstPrice > 0): ?>
 
-                            <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                <?php if ($in_stock == true): ?>
-                               <div class="d-flex justify-content-center">
-                                   <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-outline-primary btn-sm">Add to cart</a>
-                               </div>
+                                <div class="price-holder text-center justify-content-center">
+                                    <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
+                                        <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
+                                            <?php
+                                            $vals2 = array_values($item['prices']);
+                                            $val1 = array_shift($vals2);
+                                            ?>
+                                            <p>
+                                                <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
+                                                    <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
+                                                <?php endif; ?>
+                                                <span class="price"><?php print currency_format($val1); ?></span>
+                                            </p>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
+                                </div>
+
+                                <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                    <?php if ($in_stock == true): ?>
+                                   <div class="d-flex justify-content-center">
+                                       <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-outline-primary btn-sm">Add to cart</a>
+                                   </div>
+                                    <?php endif; ?>
                                 <?php endif; ?>
                             <?php endif; ?>
                         </div>

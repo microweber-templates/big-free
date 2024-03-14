@@ -4,7 +4,7 @@
 
 type: layout
 
-name: Content 8
+name: Content 8 - Parallax
 
 position: 8
 

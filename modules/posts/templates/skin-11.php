@@ -53,7 +53,7 @@ description: Posts 11
 
                                         <div class="w-40">
                                             <div class="img-as-background rounded-circle square">
-                                                <img src="<?php echo thumbnail($user['thumbnail'], 1200, 1200); ?>" />
+                                                <img loading="lazy" src="<?php echo thumbnail($user['thumbnail'], 1200, 1200); ?>" />
                                             </div>
                                         </div>
                                     <?php endif; ?>

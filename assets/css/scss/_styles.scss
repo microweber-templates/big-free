@@ -186,7 +186,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
             }
 
             &.slick-active button {
-                background: var(--textDark);
+                background: var(--mw-heading-color);
                 height: 12px;
                 width: 12px;
             }
@@ -214,7 +214,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
         align-items: center;
         justify-content: center;
         opacity: 0.5;
-        color: var(--textDark);
+        color: var(--mw-heading-color);
 
         &:hover {
             background: $white;
@@ -307,7 +307,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
         z-index: 9;
         width: 50px;
         height: 50px;
-        background: var(--textDark);
+        background: var(--mw-heading-color);
         //background: rgba(red($white), green($white), blue($white), 0.7);
         display: flex;
         align-items: center;

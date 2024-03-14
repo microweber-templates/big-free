@@ -17,22 +17,23 @@ $mw-body-color:                     $mw-black-color !default;
 
 
 $mw-header-background:          $mw-white-color !default;
-$mw-header-links-color:         $mw-black-color !default;
+$mw-header-links-color:         $mw-orange-color !default;
 $mw-header-links-hover-color:   $mw-orange-color !default;
+$mw-header-link-background-hover-color: transparent !default;
 $mw-header-padding-block:       10px !default;
 $mw-header-font-size:           16px !default;
 
 $mw-top-header-background:          $mw-black-color !default;
 $mw-top-header-primary-color:       $mw-orange-color !default;
 $mw-top-header-links-color:         $mw-orange-color !default;
-$mw-top-header-links-hover-color:   $mw-white-color !default;
+$mw-top-header-links-hover-color:   $mw-orange-color !default;
 $mw-top-header-button-background-color: $mw-orange-color !default;
 $mw-top-header-button-background-hover-color: $mw-orange-color !default;
 $mw-top-header-button-text-color:   $mw-white-color !default;
 $mw-top-header-button-text-hover-color: $mw-white-color !default;
 
 
-$mw-link-color:                     $mw-black-color !default;
+$mw-link-color:                     $mw-orange-color !default;
 $mw-heading-color:          $mw-black-color !default;
 $mw-paragraph-color:                $mw-black-color !default;
 
@@ -61,8 +62,8 @@ $mw-footer-button-background-color: $mw-orange-color !default;
 $mw-footer-button-background-hover-color: $mw-orange-color !default;
 $mw-footer-button-text-color:       $mw-white-color !default;
 $mw-footer-button-text-hover-color: $mw-white-color !default;
-$mw-footer-link-color:       $mw-black-color !default;
-$mw-footer-hover-link-color: $mw-black-color !default;
+$mw-footer-link-color:       $mw-orange-color !default;
+$mw-footer-hover-link-color: $mw-orange-color !default;
 $mw-footer-text-color:       $mw-black-color !default;
 $mw-footer-primary-color:    $mw-orange-color !default;
 $mw-footer-font-size:        16px !default;
@@ -122,6 +123,7 @@ $mw-text-on-dark-background-color: $mw-white-color !default;
     --mw-header-background-color: #{$mw-header-background};
     --mw-header-link-color: #{$mw-header-links-color};
     --mw-header-link-hover-color: #{$mw-header-links-hover-color};
+    --mw-header-link-background-hover-color: #{$mw-header-link-background-hover-color};
     --mw-header-padding-block: #{$mw-header-padding-block};
     --mw-header-font-size: #{$mw-header-font-size};
 

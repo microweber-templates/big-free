@@ -352,13 +352,13 @@
     .product-slider-holder h6 {
         font-weight: 600;
         margin-bottom: 50px;
-        color: var(--textDark);
+        color: var(--mw-heading-color);
     }
 
     .product-slider-holder p,
     .product-slider-holder span {
         line-height: 1.5;
-        color: var(--textDark);
+        color: var(--mw-heading-color);
         font-weight: 300;
     }
 
@@ -490,7 +490,7 @@
         border-radius: 100%;
         background: transparent;
         padding: 3px;
-        border: 2px solid var(--textDark);
+        border: 2px solid var(--mw-heading-color);
     }
 
     .product-slider .slick-dots li button:before {
@@ -498,7 +498,7 @@
     }
 
     .product-slider .slick-dots li.slick-active button {
-        background: var(--textDark);
+        background: var(--mw-heading-color);
         //height: 16px;
         //width: 16px;
         //border: 2px solid @dark;

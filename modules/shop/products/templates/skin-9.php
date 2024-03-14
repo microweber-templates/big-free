@@ -65,7 +65,9 @@ if (!isset($tn[1])) {
             }
             ?>
 
-            <div class="mx-auto mx-md-0 col-lg-12 py-5 mb-3 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope="" itemtype="<?php print $schema_org_item_type_tag ?>">
+            <div class="mx-auto mx-md-0 col-lg-12 py-5 mb-3 item-<?php print $item['id'] ?>"
+                 data-masonry-filter="<?php print $itemCats; ?>" itemscope=""
+                 itemtype="<?php print $schema_org_item_type_tag ?>">
                 <div class="product h-100 d-flex flex-column position-relative">
                     <div class="h-100 d-md-flex">
                         <?php if (is_array($item['prices'])): ?>
@@ -81,7 +83,8 @@ if (!isset($tn[1])) {
                                 <div class="img-as-background" style="display: block; padding-bottom: 100%;">
                                     <?php if (isset($itemData['label-type']) && $itemData['label-type'] === 'text'): ?>
                                         <div class="position-absolute  top-0 left-0 m-2" style="z-index: 3;">
-                                            <div class="badge text-white px-3 pb-1 pt-2 rounded-0" style="background-color: <?php echo $itemData['label-color']; ?>;"><?php echo $itemData['label']; ?></div>
+                                            <div class="badge text-white px-3 pb-1 pt-2 rounded-0"
+                                                 style="background-color: <?php echo $itemData['label-color']; ?>;"><?php echo $itemData['label']; ?></div>
                                         </div>
                                     <?php endif; ?>
 
@@ -112,7 +115,7 @@ if (!isset($tn[1])) {
                                             </div>
                                         <?php endif; ?>
                                     <?php endif; ?>
-                                    <img src="<?php print thumbnail($item['image'], 850, 850); ?>"/>
+                                    <img loading="lazy" src="<?php print thumbnail($item['image'], 850, 850); ?>"/>
                                 </div>
                             </a>
                         <?php endif; ?>
@@ -129,31 +132,44 @@ if (!isset($tn[1])) {
                                         </a>
                                     <?php endif; ?>
 
-                                    <div class="price-holder">
-                                        <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
-                                            <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
-                                                <?php
-                                                $vals2 = array_values($item['prices']);
-                                                $val1 = array_shift($vals2);
-                                                ?>
-                                                <p>
-                                                    <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                        <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
-                                                    <?php endif; ?>
-                                                    <span class="price"><?php print currency_format($val1); ?></span>
-                                                </p>
+                                    <?php
+                                    $itemPrices = $item['prices'];
+                                    $firstPrice = reset($itemPrices);
+                                    if ($firstPrice !== false && $firstPrice > 0): ?>
+                                        <div class="price-holder">
+                                            <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
+                                                <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
+                                                    <?php
+                                                    $vals2 = array_values($item['prices']);
+                                                    $val1 = array_shift($vals2);
+                                                    ?>
+                                                    <p>
+                                                        <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
+                                                            <span
+                                                                class="price-old"><?php print currency_format($item['original_price']); ?></span>
+                                                        <?php endif; ?>
+                                                        <span
+                                                            class="price"><?php print currency_format($val1); ?></span>
+                                                    </p>
+                                                <?php endif; ?>
+                                            <?php endif; ?>
+                                        </div>
+                                    <?php endif; ?>
+                                </div>
+
+                                <?php
+
+                                if ($firstPrice !== false && $firstPrice > 0): ?>
+                                    <div class="py-4">
+                                        <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                            <?php if ($in_stock == true): ?>
+                                                <a href="javascript:;"
+                                                   onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');"
+                                                   class="btn btn-primary px-4 btn-md"> <?php _lang("BUY NOW", 'templates/big') ?></a>
                                             <?php endif; ?>
                                         <?php endif; ?>
                                     </div>
-                                </div>
-
-                                <div class="py-4">
-                                    <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                        <?php if ($in_stock == true): ?>
-                                            <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-primary px-4 btn-md"> <?php _lang("BUY NOW", 'templates/big') ?></a>
-                                        <?php endif; ?>
-                                    <?php endif; ?>
-                                </div>
+                                <?php endif; ?>
                             </div>
 
                             <?php if (isset($item['description'])): ?>

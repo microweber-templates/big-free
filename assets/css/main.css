@@ -8612,11 +8612,11 @@ textarea.form-control-lg {
 .beauty .product-slider-holder .h6 {
   font-weight: 600;
   margin-bottom: 50px;
-  color: var(--textDark); }
+  color: var(--mw-heading-color); }
 .beauty .product-slider-holder p,
 .beauty .product-slider-holder span {
   line-height: 1.5;
-  color: var(--textDark);
+  color: var(--mw-heading-color);
   font-weight: 300; }
 .beauty .product-slider-holder p {
   margin-bottom: 10px; }
@@ -8717,11 +8717,11 @@ textarea.form-control-lg {
   border-radius: 100%;
   background: transparent;
   padding: 3px;
-  border: 2px solid var(--textDark); }
+  border: 2px solid var(--mw-heading-color); }
 .beauty .product-slider .slick-dots li button:before {
   display: none; }
 .beauty .product-slider .slick-dots li.slick-active button {
-  background: var(--textDark); }
+  background: var(--mw-heading-color); }
 @media screen and (max-width: 1366px) {
   .beauty .product-slider .slick-dots {
     margin: 30px 0; } }
@@ -11015,7 +11015,7 @@ i.icon-size-88px {
       .slick-slider .slick-dots li button:before {
         display: none; }
     .slick-slider .slick-dots li.slick-active button {
-      background: var(--textDark);
+      background: var(--mw-heading-color);
       height: 12px;
       width: 12px; }
   @media screen and (max-width: 1199px) {
@@ -11034,7 +11034,7 @@ i.icon-size-88px {
   align-items: center;
   justify-content: center;
   opacity: 0.5;
-  color: var(--textDark); }
+  color: var(--mw-heading-color); }
   .slickSlider-skin-1 .slick-arrow:hover,
   .slickSlider-skin-3 .slick-arrow:hover {
     background: #fff;
@@ -11100,7 +11100,7 @@ i.icon-size-88px {
   z-index: 9;
   width: 50px;
   height: 50px;
-  background: var(--textDark);
+  background: var(--mw-heading-color);
   display: flex;
   align-items: center;
   justify-content: center;

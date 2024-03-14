@@ -34,6 +34,17 @@
                     }
                 },
                 {
+                    "title": "link background hover",
+                    "description": "link background hover",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-header-link-background-hover-color"
+                    }
+                },
+                {
                     "title": "Height",
                     "description": "Height",
                     "fieldType": "rangeSlider",
@@ -76,7 +87,8 @@
                             "--mw-header-link-color",
                             "--mw-header-link-hover-color",
                             "--mw-header-padding-block",
-                            "--mw-header-font-size"
+                            "--mw-header-font-size",
+                            "--mw-header-link-background-hover-color"
                         ]
                     }
                 }

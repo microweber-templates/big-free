@@ -94,8 +94,8 @@ if (isset($json) == false or count($json) == 0) {
             <div class="card sk2 card-collapse border mb-3 <?php if ($key == 0) : ?> active <?php endif; ?>">
                 <div class="card-header p-0" id="header-item-<?php print $edit_field_key ?>">
                     <button class="btn w-100 rounded-0 btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" aria-expanded="true" aria-controls="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>">
-                        <?php //module icon -
-                        //print isset($slide['icon']) ? $slide['icon'] . ' ' : '';
+                        <?php
+                        print isset($slide['icon']) ? $slide['icon'] . ' ' : '';
                         ?>
                         <h4> <?php print isset($slide['title']) ? $slide['title'] : ''; ?> </h4>
                         <i class="mdi arrow sk2 rounded-circle <?php if ($key == 0) : ?>mdi-chevron-down<?php else : ?>mdi-chevron-down<?php endif; ?>"></i>

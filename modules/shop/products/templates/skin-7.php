@@ -124,34 +124,39 @@ if (!isset($tn[1])) {
                             </a>
                         <?php endif; ?>
 
-                        <div class="row justify-content-center">
-                            <div class="col-6 price-holder justify-content-md-start align-items-center justify-content-center">
-                                <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
-                                    <?php if (isset($item['prices']) and is_array($item['prices'])) { ?>
-                                        <?php
-                                        $vals2 = array_values($item['prices']);
-                                        $val1 = array_shift($vals2);
-                                        ?>
-                                        <p>
-                                            <?php if (isset($item['original_price']) AND $item['original_price'] != ''): ?>
-                                                <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
-                                            <?php endif; ?>
-                                            <span class="price"><?php print currency_format($val1); ?></span>
-                                        </p>
-                                    <?php } ?>
-                                <?php endif; ?>
-                            </div>
+                        <?php
+                        $itemPrices = $item['prices'];
+                        $firstPrice = reset($itemPrices);
+                        if ($firstPrice !== false && $firstPrice > 0): ?>
+                            <div class="row justify-content-center">
+                                <div class="col-6 price-holder justify-content-md-start align-items-center justify-content-center">
+                                    <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
+                                        <?php if (isset($item['prices']) and is_array($item['prices'])) { ?>
+                                            <?php
+                                            $vals2 = array_values($item['prices']);
+                                            $val1 = array_shift($vals2);
+                                            ?>
+                                            <p>
+                                                <?php if (isset($item['original_price']) AND $item['original_price'] != ''): ?>
+                                                    <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
+                                                <?php endif; ?>
+                                                <span class="price"><?php print currency_format($val1); ?></span>
+                                            </p>
+                                        <?php } ?>
+                                    <?php endif; ?>
+                                </div>
 
-                            <div class="col-sm-6 col-12 d-flex justify-content-md-end justify-content-center">
-                              <div>
-                                  <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                      <?php if ($in_stock == true): ?>
-                                          <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-outline-primary btn-sm"> <?php _lang("Buy", 'templates/big') ?></a>
+                                <div class="col-sm-6 col-12 d-flex justify-content-md-end justify-content-center">
+                                  <div>
+                                      <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                          <?php if ($in_stock == true): ?>
+                                              <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-outline-primary btn-sm"> <?php _lang("Buy", 'templates/big') ?></a>
+                                          <?php endif; ?>
                                       <?php endif; ?>
-                                  <?php endif; ?>
-                              </div>
+                                  </div>
+                                </div>
                             </div>
-                        </div>
+                      <?php endif; ?>
                     </div>
                 </div>
             </div>

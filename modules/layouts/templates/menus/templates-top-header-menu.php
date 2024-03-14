@@ -40,7 +40,7 @@ include(__DIR__.'/settings_is_multilanguage_front.php');
           <?php include template_dir() . "partials/header/parts/socials.php"; ?>
       </div>
 
-      <div class="d-flex align-items-center flex-wrap">
+      <div class="d-flex align-items-center flex-wrap gap-2">
           <?php include template_dir() . "partials/header/parts/multilanguage.php"; ?>
           <?php include template_dir() . "partials/header/parts/phone.php"; ?>
           <?php include template_dir() . "partials/header/parts/contact.php"; ?>
